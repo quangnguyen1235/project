@@ -1,15 +1,16 @@
-<head></head>
+<head>
+
+
+</head>
 <body>
     <script>
-        
+       
+        let sum= 0;
         while(num!=-1){
-            var num=prompt("nhap vao mot so: ");
-            var tong=0;
-            var n=parseInt(num);
-            tong=tong+n;
-            document.write(n);
-            document.write("<br/>"+ tong);
-            
+            var num= +prompt('nhap so!');
+            alert(num);
+            sum=sum+num;     
         }
+        document.write('tong '+sum);
     </script>
 </body>
