@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Điểm trung bình</title>
+</head>
+<body>
+    <script>
+        var inputLy;
+        var inputHoa;
+        var inputSinh;
+        inputLy=prompt("nhập điểm môn lý");
+        inputHoa=prompt('nhập điểm môn hóa');
+        inputSinh=prompt('nhập điểm môn sinh');
+        ly=parseInt(inputLy);
+        hoa=parseInt(inputHoa);
+        sinh=parseInt(inputSinh);
+        var diemtrungbinh= (ly+hoa+sinh)/3;
+        var diemtong=  (ly+hoa+sinh);
+        document.write('Điểm trung bình là: '+diemtrungbinh);
+        document.write('Điểm tổng là: '+diemtong);
+    </script>
+</body>
+</html>
