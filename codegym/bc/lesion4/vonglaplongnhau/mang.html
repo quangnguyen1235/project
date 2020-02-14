@@ -1,0 +1,15 @@
+<head></head>
+<body>
+    <script>
+        var tong=0;
+       var site=prompt('nhập số phần tử của mảng!');
+       s=parseInt(site);
+       var number=new Array();
+       number.length=s
+       for(var i=0; i<number.length; i++){
+            number[i]=+prompt('nhập giá trị từng phần tử');
+            tong=tong+number[i];
+       }
+       document.write(tong);
+    </script>
+</body>
