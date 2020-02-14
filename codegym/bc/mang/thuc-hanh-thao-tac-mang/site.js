@@ -9,8 +9,7 @@ function add_element(){
 function add_dislay(){
     let e= "<hr/>";
     for (let i=0; i<array.length; i++){
-        e+= "element" + i + array[i] + "<br/>";
+        e+= "element = " + array[i] + "<br/>";
         document.getElementById("result").innerHTML=e;
-
     }
 }
