@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function inSNT(num){
+            for( let num; num<=10000; num++){
+                document.write("</br>"+num);
+            }
+        }
+        function kiemtraSNT(valNum){
+            let laSNT = true;
+            for( let i=2; i<=Math.sqrt(valNum); i++){
+                if (valNum%i==0) {
+                    laSNT = false;
+                    break;
+                }
+            }
+        }
+        inSNT()
+
+    </script>
+
+</body>
+</html>

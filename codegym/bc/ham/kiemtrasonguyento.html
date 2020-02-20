@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kiem tra so nguyen to</title>
+</head>
+<body>
+    <h1>Kiểm tra số nguyên tố</h1>
+    <p>Nhập số để kiểm tra</p><input id="inputNumber" type="number" placeholder="Nhập số"
+    oninput="kiemtraSNT(this.value)"
+    onchange="kiemtraSNT(this.value)">
+    <p>Số này là: </p><span id="outputSNT"></span>
+    <script>
+
+        function kiemtraSNT(valNum){
+            let laSNT = true;
+            for( let i=2; i<=Math.sqrt(valNum); i++){
+                if (valNum%i==0) {
+                    laSNT = false;
+                    break;
+                }
+            }
+            document.getElementById("outputSNT").innerHTML= valNum + " " + (laSNT ? "là SNT" : "không là SNT");
+        }
+        
+    </script>
+
+</body>
+</html>

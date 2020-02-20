@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var result = [];
+        var tiengAnh=["one","two","three"];
+        var tiengViet=['một','hai','ba'];
+        var ngonngu= prompt('Nhập ngôn ngữ cần chuyển đổi ANH/VIET (A/V) ');
+        if (ngonngu=="a") { 
+            tiengAnhsangtiengViet();
+
+        }
+        else if (ngonngu=="v"){ 
+            tiengVietsangtiengAnh();
+        }
+        
+
+
+
+
+
+        function tiengAnhsangtiengViet(){
+            var str=prompt('Nhập từ tiếng Anh');
+            let pos = -1;
+            for(var x = 0; x<tiengAnh.length; x++){
+                if ( tiengAnh[x] == str){
+                    pos = x;
+                    break;
+                }
+            }
+            if (pos!==-1){
+                    result.push(tiengViet[pos]);
+            }
+            else{
+                alert('Không tìm thấy !');
+            }
+            // let pos =  tiengAnh.indexOf(str);
+            // if (pos!==-1){
+            //         result.push(tiengViet[pos]);
+            // }
+            // else{
+            //     alert('Không tìm thấy !');
+            // }
+        }
+        function tiengVietsangtiengAnh(){
+            var str=prompt('nhập từ tiếng Việt');
+            // for (var x=0; x<tiengViet.length; x++){
+            //     if ( tiengViet.indexOf(str)!==-1){
+            //         result.push(tiengAnh[x]);
+            //     }
+            //     else{
+            //         alert('không tìm thấy !');
+            //     }
+            // }
+            let pos = tiengViet.indexOf(str);
+            if (pos !==-1){
+                    result.push(tiengAnh[pos]);
+            }
+            else{
+                alert('không tìm thấy !');
+            }
+        }
+        document.write(result);
+    </script>
+
+</body>
+</html>
