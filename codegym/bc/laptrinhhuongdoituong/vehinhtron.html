@@ -1,0 +1,37 @@
+<head></head>
+<body>
+    <canvas id="myCanvas" width="1360px" height="768px"></canvas>
+    <script>
+        function circle(x,y,radius) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+        }
+        function getRandomHex() {
+            return Math.floor(Math.random()*255);
+        }
+        function getRandomColor() {
+            var red = getRandomHex();
+            var green = getRandomHex();
+            var blue = getRandomHex();
+            return "rgb(" + red + "," + blue + "," + green +")";
+        }
+        function createCircle(){
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            var radius = Math.floor(Math.random()*80);
+            var color = getRandomColor();
+            var x = Math.random() *window.innerWidth;
+            var y = Math.random() *window.innerHeight;
+            var hinhtron = new circle (x,y,radius);
+            ctx.beginPath();
+            ctx.arc(hinhtron.x, hinhtron.y, hinhtron.radius, 0, 2 * Math.PI);
+            ctx.fillStyle = color
+            ctx.fill();
+        }
+        var a= +prompt("bạn muốn vẽ bao nhiêu hình tròn !");
+        for (i=0; i<=a; i++) {
+            createCircle();
+        }
+
+    </script>
+</body>
