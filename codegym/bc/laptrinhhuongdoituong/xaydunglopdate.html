@@ -1,0 +1,30 @@
+<head></head>
+<body>
+    <script>
+        function myDay(day,month,year){
+            this.day = day;
+            this.month = month;
+            this.year = year;
+            this.getDay = function(){
+                return this.day
+            }
+            this.getMonth = function(){
+                return this.month;
+            }
+            this.getYear = function(){
+                return this.year;
+            }
+            this.setDay = function(changeDay){
+                this.day = changeDay;
+            }
+            this.setMonth = function(changeMonth){
+                this.month = changeMonth;
+            }
+            this.setYear = function(changeYear){
+                this.year = changeYear;
+            }
+        }
+        let quangdate = new myDay("20","1","1998");
+        
+    </script>
+</body>

@@ -1,0 +1,22 @@
+<head></head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function person(firstname, lastname, age, eyescolor) {
+            this.firstname=firstname;
+            this.lastname=lastname;
+            this.age=age;
+            this.eyescolor;
+            this.fullname= function(){
+                return this.firstname +" "+ this.lastname;
+            }
+            this.getfirstname= function getfirstname() {
+                return this.firstname;
+            }
+            this.changename= function changename(change) {
+                this.firstname= change;
+            }
+        }
+        var quang = new person("quang","nguyen","22","brown");
+    </script>
+</body>
