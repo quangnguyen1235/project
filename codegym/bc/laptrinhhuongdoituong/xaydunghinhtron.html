@@ -1,0 +1,17 @@
+<head></head>
+<body>
+    <script>
+        function hinhtron(radius,color) {
+            this.radius = radius;
+            this.color = color;
+            this.getRadius = function() {
+                return this.radius;
+            }
+            this.getArea = function() {
+                return Math.PI*this.radius*this.radius;
+            }
+        }
+        let hinhtron1 = new hinhtron(20,"red");
+       
+    </script>
+</body>
