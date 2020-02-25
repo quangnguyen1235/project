@@ -1,0 +1,23 @@
+<head></head>
+<body>
+    <canvas width="400px" height="400px" id="myCanvas"></canvas>
+    <script>
+        function hinhChuNhat(x,y, chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+            this.dienTich = function() {
+                return (chieuDai*chieuRong);
+            }
+            this.chuVi = function() {
+                return (chieuDai+chieuRong)*2;
+            }
+        }
+        function createHinhChuNhat() {
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            var hinhchunhat = new hinhChuNhat(0,0,30,15);
+            ctx.strokeRect(hinhchunhat.x, hinhchunhat.y, hinhchunhat.chieuDai, hinhchunhat.chieuRong);
+            
+        }
+        createHinhChuNhat();
+    </script>
+</body>

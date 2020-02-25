@@ -1,0 +1,57 @@
+<head></head>
+<body>
+    <script>
+        var Battery = function () {
+            this.setEnergy = function(energy) {
+                this.energy = energy;
+            }
+            this.getEnergy = function() {
+                return this.energy;
+            }
+            this.decreaseEnergy = function(energy) { 
+                if (this.energy<0) {
+                    this.energy--;
+                }
+            }
+        }
+        var FlashLamp = function() {
+            this.setBattery = function(battery) {
+                this.battery = battery;
+            }
+            this.getBatteryInfo = function() {
+                return this.battery.getEnergy();
+            }
+            this.light = function() {
+                if (this.status) {
+                    alert("đèn đang sáng!");
+                }
+                else {
+                    alert("đèn chưa bật");
+                }
+                
+            }
+            this.turnOn = function() {
+                this.status = true;
+            }
+            this.turnOff = function() {
+                this.status = false;
+            }
+
+        }
+    var battery = new Battery();
+    battery.setEnergy(10);
+    var flashlamp = new FlashLamp();
+    flashlamp.setBattery(battery);
+    document.write("dung lượng pin: " + flashlamp.getBatteryInfo()+"<br>");
+    flashlamp.light();
+    document.write("Turn on<br/>")
+    flashlamp.turnOn();
+    flashlamp.light();
+    document.write("Battery info:" + flashlamp.getBatteryInfo() + "<br/>");
+    document.write("Turn off<br/>")
+    flashlamp.turnOff();
+    flashlamp.light();
+
+
+    </script>
+</body>
