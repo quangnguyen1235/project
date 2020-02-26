@@ -1,0 +1,19 @@
+<head></head>
+<body>
+    <script>
+        function convertPhoneNumber (str) {
+            return str.replace(/-/g,'');
+        }
+        function checkPhoneNumber (str) {
+            regexp = /[0-9]{12}/;
+            if (regexp.test(str)) {
+                return alert("Số điện thoại hợp lệ");
+            }
+            else {
+                return alert("Số điện thoại không hợp lệ");
+            }
+        }
+        var a= prompt("nhập số điện thoại");
+        checkPhoneNumber(convertPhoneNumber(a));
+    </script>
+</body>
