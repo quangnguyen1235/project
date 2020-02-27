@@ -1,0 +1,17 @@
+<head></head>
+<body>
+    <script>
+       
+        function checkdate (str) {
+            regexp = /^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$/;
+            if (regexp.test(str)) {
+                return alert ("Ngày tháng chuẩn");
+            }
+            else {
+                alert("Ngày tháng không chuẩn");
+            }
+        }
+        var a=prompt("nhập ngày tháng năm");
+        checkdate(a);
+    </script>
+</body>

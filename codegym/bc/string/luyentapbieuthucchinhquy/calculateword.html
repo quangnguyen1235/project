@@ -1,0 +1,40 @@
+<head></head>
+
+<body>
+    <script>
+        /*function delelteSpace(str) {
+            let result = [];
+            result = str.trim().split();
+
+            for (let i = 0; i < result.length; i++) {
+                if (result[i] == ' ' && result[i + 1] == ' ') {
+                    result.splice(i,1);
+                }
+            }
+            return result.join(' ');
+        }*/
+
+        function trimAdvance(str){
+            let result = '';
+            str = str.trim();
+            for(let i = 0; i < str.length; i++){
+                if(str[i] == ' ' && str[i+1] == ' ')
+                    continue;
+                result += str[i];
+            }
+            return result;
+        }
+        function calculateWord(str) {
+            let calculate = 1;
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] == ' ') {
+                    calculate += 1;
+                }
+            }
+            return alert("Số từ trong chuỗi là:" + calculate);
+        }
+        let str = prompt("Nhập một chuỗi kí tự !");
+        //calculateWord(delelteSpace(str));
+        calculateWord(trimAdvance(str));
+    </script>
+</body>
