@@ -1,0 +1,20 @@
+<head></head>
+<body>
+    <script>
+       var num = [];
+        for (let i=0; i<100; i++) {
+            num[i] = Math.floor(Math.random()*101);
+        }
+        let left = [];
+        let right= [];
+        let pilot = num[50];
+           for (i=0; i<num.length; i++) {
+               if (num[i]<pilot) {
+                   left+=" "+num[i];
+               }
+               else if (num[i]>pilot) {
+                   right+=" "+num[i];
+               }
+           }
+    </script>
+</body>

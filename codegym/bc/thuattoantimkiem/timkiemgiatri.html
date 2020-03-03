@@ -1,0 +1,28 @@
+<head></head>
+<body>
+    <script>
+        var num = [];
+        for (let i=0; i<100; i++) {
+            num[i] = Math.floor(Math.random()*101);
+        }
+       function dispArr(arr) {
+           for (let i=0; i<arr.length; i++ ) {
+                    document.write(arr[i]+' ');
+               if ((i+1)%10==0) {
+                    document.write("<br/>");
+               }
+           }
+       }
+       function countArr(arr,a) {
+           let count=0;
+            for (let i=0; i<arr.length; i++)
+                if (arr[i]!=a)
+                continue;
+                count++;
+            return alert("số giá trị thích hợp là "+count);
+       }
+       dispArr(num);
+       countArr(num,+prompt("nhập giá trị cần tìm"));
+       
+    </script>
+</body>

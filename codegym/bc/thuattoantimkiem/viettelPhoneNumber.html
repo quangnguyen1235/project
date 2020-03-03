@@ -1,0 +1,15 @@
+<head></head>
+<body>
+    <script>
+        function checkPhoneNumber (phoneNumber) {
+            var regexp = /^(096 097 098 086 032 033 034 035 036 037 038 039)/;
+            if (regexp.test(phoneNumber)) {
+                return alert("Số vừa nhập là số viettel !")
+            }
+            else {
+                return alert("Số vừa nhập không phải là số Viettel !")
+            }
+        }
+        checkPhoneNumber(prompt("Nhập số điện thoại"));
+    </script>
+</body>
