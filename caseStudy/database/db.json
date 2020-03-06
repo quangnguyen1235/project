@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "fullName": "quangnguyen",
+      "gender": "male",
+      "dob": "20-1-1998"
+    },
+    {
+      "id": 2,
+      "fullName": "quangnguyen",
+      "gender": "male",
+      "dob": "20-1-1998"
+    },
+    {
+      "fullName": "Nguyễn Đăng Quang",
+      "gender": "1",
+      "dob": "1998-01-20",
+      "id": 3
+    },
+    {
+      "fullName": "fuck",
+      "gender": "1",
+      "dob": "0022-02-22",
+      "id": 4
+    },
+    {
+      "fullName": "quang",
+      "gender": "Male",
+      "dob": "1998-02-01",
+      "id": 5
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "BC net Core"
+    },
+    {
+      "id": 2,
+      "name": "BC net Core"
+    }
+  ]
+}

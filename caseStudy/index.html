@@ -1,0 +1,89 @@
+<head>
+    <link rel="stylesheet" href="libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Students Management</h1>
+      <a href="javascript:void(0)" class="btn btn-outline-success" onclick="student.openModal()">Create Student</a>
+      <table class="table table-hover mt-3">
+        <thead class="thead-dark">
+          <tr>
+            <th>#ID</th>
+            <th>FULLNAME</th>
+            <th>GENDER</th>
+            <th>DAY OF BIRTH</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody id="tbStudents">
+
+        </tbody>
+      </table>
+        </div>
+    <div class="modal" id="addEditStudents">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">New Student</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form id="formAddEditStudent">
+              <div class="row form-group">
+                <div class="col-3">
+                  <label class="">Fullname</label>
+                </div>
+                <div class="col-9">
+                  <input type="text" class="form-control"
+                  id="FullName"
+                  data-rule-required=true
+                  data-msg-required="Bạn phải nhập dữ liệu ở đây !"
+                  >
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-3">
+                  <label class="">Gender</label>
+                </div>
+                <div class="col-9">
+                  <select class="form-control"
+                  id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-3">
+                  <label class="">Date of Birth</label>
+                </div>
+                <div class="col-9">
+                  <input type="date" class="form-control"
+                  id="DOB"
+                  data-rule-date=true
+                  data-msg-date="Bạn phải nhập dữ liệu ở đây !">
+                </div>
+              </div>
+            </form>
+            </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <a href="javaScript:void(0);" class="btn btn-Success" onclick="student.save()">Save</a>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <script src="libs/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="scripts/students.js"></script>
+    
+</body>

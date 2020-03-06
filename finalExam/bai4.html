@@ -1,0 +1,19 @@
+<head></head>
+<body>
+    <canvas id="myCanvas" width="300px" height="700px"></canvas>
+    <script>
+        function Rectangle (x,y,width,height,color) {
+            this.x=x;
+            this.y=y;
+            this.width=width;
+            this.height=height;
+            this.color=color;
+            this.Render= function() {
+                var ctx = document.getElementById("myCanvas").getContext("2d");
+                ctx.fillRect(this.x, this.y, this.width, this.height, this.color);
+            }
+        } 
+        var rectangle = new Rectangle(10,10,200,100,'#000000');
+        rectangle.Render();
+    </script>
+</body>

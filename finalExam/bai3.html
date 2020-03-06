@@ -1,0 +1,22 @@
+<head></head>
+<body>
+    <script>
+        function isPrime(num) {
+            if (num<2) {
+                return false;
+            }
+            else {
+            let isprime = true;
+            for (let i=2; i<Math.sqrt(num); i++) {
+                if (num%i==0) {
+                    isprime = false;
+                    break;
+                }
+            }
+            return isprime;
+           }
+        }
+        
+        console.log(isPrime(+prompt("nhập số cần kiểm tra")));
+    </script>
+</body>
