@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>QN Harpstore</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/small-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">QN Harpstore</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-success" href="javascript:void(0);" onclick="account.openModal()">Login</a>
+            <button class="btn btn-outline-primary"  onclick="openModalCart()">View Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--the Modal-->
+  <div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login</h4>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="alert alert-danger alert-dismissible fade" id="error-msg" role="alert">
+            Sai tên đăng nhập hoặc mật khẩu.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form id="formLogin">
+            <div class="row form-group">
+              <div class="col-5">
+                <label class="">Email address:</label>
+              </div>
+              <div class="col-7">
+                <input type="email" id="inputEmail" class="form-control"
+                data-rule-required="true" 
+                data-msg-required="Vui lòng nhập thông tin">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-5">
+                <label class="">Password:</label>
+              </div>
+              <div class="col-7">
+                <input type="password" id="inputPassword" class="form-control"
+                data-rule-required="true" 
+                data-msg-required="Vui lòng nhập thông tin">
+              </div>
+            </div>
+            <div class="custom-control custom-checkbox mb-3">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Remember password</label>
+          </div>
+          </form>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="account.login()">Login</button> -->
+          <a href="javascript:void(0);" class="btn btn-primary" onclick="account.login()">Login</a>
+          <button type="button" class="btn   btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--Modal Cart-->
+  <div class="modal fade  modal-xl-centered" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title">
+            Your Cart
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image" id="tbCart">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Number</th>
+                <th scope="col">Total</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table> 
+          <div class="d-flex justify-content-end">
+            <h5>Total: <span class="price text-success" id="totalMoney"></span></h5>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-7">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/banner-harmonica.jpg" alt="">
+      </div>
+      <!-- /.col-lg-8 -->
+        <div class="col-lg-5">
+        <h1 class="font-weight-light">QN Harpstore</h1>
+    </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-left">
+      <div class="card-body">
+        <p class="text-white m-0">Những niềm đam mê dù có mãnh liệt hay không cũng không nên thể hiện quá đáng tới mức làm người ta thấy căm ghét; và âm nhạc, dù trong những hoàn cảnh kinh hãi nhất cũng không nên khó nghe, mà cần vui tai và lôi cuốn, và nhờ đó mà mãi mãi vẫn luôn là âm nhạc.</p>
+      <br>
+        <p class="text-white m-0">Nevertheless the passions, whether violent or not, should never be so expressed as to reach the point of causing disgust; and music, even in situations of the greatest horror, should never be painful to the ear but should flatter and charm it, and thereby always remain music.</p>
+    <br>
+    <p class="text-white m-0">Wolfgang Amadeus Mozart.</p>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row text-center" id="main">
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; QN Harpstore 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="libs/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="scripts/user.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+  <script src="scripts/cart.js" defer></script>
+
+</body>
+
+</html>
