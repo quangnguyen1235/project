@@ -74,35 +74,12 @@ namespace convertnumber
             }
             return numConvertedz;
         }
-        public double ConvertNumber(int numberSysten, int[] numberConverted)
+        public double ConvertNumber(int numberSystem, int[] numberConverted)
         {
             double number = 0;
-            switch (numbersystem)
+            for (int i = numberConverted.Length - 1; i >= 0; i--)
             {
-                case 2:
-                    {
-                       for (int i = numberConverted.Length - 1; i >=0; i--)
-                       {
-                            number += numberConverted[i] * Math.Pow(2, numberConverted.Length - 1 - i);
-                       }
-                        break;
-                    }
-                case 8:
-                    {
-                        for (int i = numberConverted.Length - 1; i >= 0; i--)
-                        {
-                            number += numberConverted[i] * Math.Pow(8, numberConverted.Length - 1 - i);
-                        }
-                        break;
-                    }
-                case 16:
-                    {
-                        for (int i = numberConverted.Length - 1; i >= 0; i--)
-                        {
-                            number += numberConverted[i] * Math.Pow(16, numberConverted.Length - 1 - i);
-                        }
-                        break;
-                    }
+                number += numberConverted[i] * Math.Pow(numberSystem, numberConverted.Length - 1 - i);
             }
             return number;
         }

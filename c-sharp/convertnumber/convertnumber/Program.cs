@@ -12,15 +12,22 @@ namespace convertnumber
         public static void Init()
         {
             int[] numConverted;
-            string number;
-            bool check = true;
+            string number="";
+            bool check = false;
             int numberStyle = InputNumStyle();
-            do
+            //do
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine("Please Reinput number");
+            //    number = InputNumber().ToUpper();
+            //    CheckStyleNumber(numberStyle, ref number, ref check);
+            //}
+            while (check == false)
             {
+                Console.Clear();
                 number = InputNumber().ToUpper();
                 CheckStyleNumber(numberStyle, ref number, ref check);
-            } 
-            while (check == false);
+            };
             Number numb = new Number(numberStyle, number);
             numConverted = numb.StringToNum(number);
             Console.WriteLine($"Dec:{numb.ConvertNumber(numberStyle, numConverted)}");
