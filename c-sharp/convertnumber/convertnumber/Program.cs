@@ -42,6 +42,7 @@ namespace convertnumber
                 {
                     numberStyle = number;
                 }
+                Console.Clear();
             } while ((numberStyle != 2) && (numberStyle != 8) && (numberStyle != 16));
             return numberStyle;
         }
@@ -76,8 +77,7 @@ namespace convertnumber
                         for (int i = 0; i < number.Length; i++)
                         {
                             if (number[i] != '0' && number[i] != '1' && number[i] != '2' && number[i] != '3' &&
-                                number[i] != '4' && number[i] != '5' && number[i] != '6' && number[i] != '7' &&
-                                number[i] != '8')
+                                number[i] != '4' && number[i] != '5' && number[i] != '6' && number[i] != '7')
                             {
                                 check = false;
                             }
