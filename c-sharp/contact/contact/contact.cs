@@ -125,12 +125,20 @@ namespace contact
         }
         public void ShowContact()
         {
+            Console.Clear();
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("This is contact list:");
+            Console.WriteLine("----------------------------------");
             for (int i = 0; i < contactList.Length; i++)
             {
                 Console.WriteLine($"Name: {contactList[i].Name}\t Phonenumber: {contactList[i].PhoneNumber}");
-                Console.Write("Please enter to continue...");
-                Console.ReadKey();
             }
+            Console.Write("Please enter to continue...");
+            Console.ReadKey();
+        }
+        public bool IsEmpty()
+        {
+            return contactList == null || contactList.Length == 0;
         }
     }
 }

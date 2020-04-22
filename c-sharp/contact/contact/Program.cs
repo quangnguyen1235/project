@@ -16,7 +16,15 @@ public class Example
 		{
 			Console.WriteLine("PhoneBook Management System");
 			Console.WriteLine("----------------------------------");
-			Console.WriteLine(" 1.Add Contact \n 2.Update Contact \n 3.Remove Contact \n 4.Search Contract \n 5.Show Contacts \n 6.Exit");
+			if (phonebook.IsEmpty())
+			{
+				Console.WriteLine(" 1.Add Contact \n 6.Exit");
+			}
+			else
+			{
+				Console.WriteLine(" 1.Add Contact \n 2.Update Contact \n 3.Remove Contact \n 4.Search Contract \n 5.Show Contacts \n 6.Exit");
+			}
+			
 			Console.Write("Your option: ");
 			if (int.TryParse(Console.ReadLine(), out int number))
 			{
@@ -71,11 +79,9 @@ public class Example
 				}
 			case 5:
 				{
-					Console.WriteLine("----------------------------------");
-					Console.WriteLine("This is contact list:");
-					Console.WriteLine("----------------------------------");
+
 					phonebook.ShowContact();
-					Console.Clear();
+					//Console.Clear();
 					break;
 				}
 			case 6:
@@ -84,6 +90,7 @@ public class Example
 					break;
 				}
 		}
+		Console.Clear();
 		Menu(ref phonebook);
 	}
 }

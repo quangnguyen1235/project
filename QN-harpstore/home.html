@@ -127,11 +127,67 @@
         </div>
         <div class="modal-footer border-top-0 d-flex justify-content-between">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Checkout</button>
+          <button type="button" class="btn btn-success" id = "checkOut" onclick="customer.openModal()" data-dismiss="modal">Checkout</button>
         </div>
       </div>
     </div>
   </div>
+  <!-- customer information -->
+  <div class="modal fade  modal-xl-centered" id="customerInformation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Customer Information</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form id="formAddOrderInfomation">
+                    <div class="row form-group">
+                        <div class="col-2">
+                            <label class="">Name:</label>
+                        </div>
+                        <input type="text" hidden id="customerId" name="customerId" value="0">
+                        <div class="col-10">
+                            <input type="text" class="form-control" id="customerName" name="customerName"
+                                data-rule-required="true" 
+                                data-msg-required="Họ và tên là bắt buộc phải nhập!">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-2">
+                            <label class="">Phone Number:</label>
+                        </div>
+                        <div class="col-10">
+                          <input type="text" class="form-control" id="customerPhoneNumber" name="customerPhoneNumber"
+                          data-rule-required="true" 
+                          data-msg-required="Số điện thoại là bắt buộc phải nhập!">                  
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-2">
+                            <label class="">Address:</label>
+                        </div>
+                        <div class="col-10">
+                            <input type="text" placeholder="Tòa nhà, Tên đường, Phường/Xã, Quận/huyện, Tỉnh/Thành phố" class="form-control" id="customerAddress" name="customerAddress"
+                            data-rule-required="true" 
+                            data-msg-required="Địa chỉ là bắt buộc phải nhập!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <a href="javascript:void(0);" class="btn btn-primary" onclick="customer.save()">Comfirm</a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
   
 </div>
   <!-- Page Content -->
@@ -189,7 +245,7 @@
   <script src="scripts/user.js" defer></script>
   <script src="scripts/home.js" defer></script>
   <script src="scripts/cart.js" defer></script>
-
+  <script src="scripts/orderInfomation.js"></script>
 </body>
 
 </html>

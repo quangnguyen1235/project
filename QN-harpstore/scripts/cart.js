@@ -44,30 +44,38 @@ function add2cart(id) {
 }
 function drawCart(){
     $('#tbCart tbody').empty();
+    
     var cartUnit="";
     var totalMonney=0;
     cart.length > 0
-    for (var i = 0; i < cart.length; i++) {
-        totalMonney += cart[i].itemPrice*cart[i].itemQuantity
+    for (var i = 0; i < cart.length; i++) { 
+        totalMonney += cart[i].itemPrice*+cart[i].itemQuantity;
         cartUnit+= 
         `<tr>
             <td><img id="Image" src="${cart[i].itemImage}" width='100px' height='70px'></td>
             <td>${cart[i].itemName}</td>
             <td>${convertCurency(cart[i].itemPrice)}&#8363;</td>
-            <td><input type="text" class="form-control" id="input1" value="${cart[i].itemQuantity}"></td>
-            <td>${convertCurency((cart[i].itemPrice)*(cart[i].itemQuantity))}</td>
+            <td><input type="number" class="input-text qty-text" min="1" max="9999" class="form-control" id="inputQLT${cart[i].id}" value="${cart[i].itemQuantity}" oninput="changeValue(${cart[i].id},${i})"></td>    
+            <td>${convertCurency(cart[i].itemPrice*cart[i].itemQuantity)}&#8363;</td>
             <td><a class="btn btn-danger"href='javascript:void(0);' title='remove item' onclick="deleteItem(${cart[i].id})"><i class="fa fa-ban" aria-hidden="true"></i></a></td>
         </tr>`
-            
-    };
-    document.getElementById('totalMoney').innerHTML=convertCurency(totalMonney);
+    }
+    document.getElementById('totalMoney').innerHTML=convertCurency(totalMonney)+'&#8363;'
     $('#tbCart tbody').append(cartUnit);
-
+    
 }
 function openModalCart(){
-    $('#cartModal').modal('show');
+    if (cart.length > 0){
+        $('#cartModal').modal('show');         
+    } else {
+        bootbox.alert('Chưa có sản phẩm trong giỏ hàng!<br>Bạn cần thêm vào giỏ ít nhất một sản phẩm!');
+    }
+    
 };
-
+function changeValue(id,i) { 
+    cart[i].itemQuantity= +$('#inputQLT'+id+'').val()
+    drawCart();
+}
 function deleteItem(id){
     bootbox.confirm({
         title: "Xóa sản phẩm",
@@ -80,17 +88,20 @@ function deleteItem(id){
                 label: '<i class="fa fa-times"></i> Không'
             }
         },
-        callback: function () {
-            var flag = false;
-            for(var i = 0; i < cart.length; i++) {
-            if(cart[i].id == id) {
-                cart.splice(i,1);
-            break;
+        callback: function (result) {
+            if (result){
+                var flag = false;
+                for(var i = 0; i < cart.length; i++) {
+                    if(cart[i].id == id) {
+                    cart.splice(i,1);
+                    break;
+            }
         }
-    }    
+        
     bootbox.alert("Sản phẩm đã được xóa thành công!")
         drawCart();
     }
+}
 })
 }
 

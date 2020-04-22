@@ -33,10 +33,11 @@ student.save = function(){
             studentObj.fullName=$('#FullName').val();
             studentObj.gender=$('#Gender').val();
             studentObj.dob=$('#DOB').val();
+            
             $.ajax({
                 url:"http://localhost:3000/students",
                 method:"POST",
-                datatype:"json",
+                datatype:"JSON",
                 contentType: "application/json",
                 data:JSON.stringify(studentObj),
                 success : function(data){

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getRndInteger() {
+            let max = +prompt("nhập giá trị lớn nhất");
+            let num = +prompt("nhập số giá trị cần lấy ra");
+            let array =[];
+            
+            for (let i = 1; i<= num; i++ ){
+                let flag = false;
+                for (let j = 1;j<= array.length;j++){
+                    
+                }
+                array.push(Math.floor(Math.random() * max) + 1);
+            } 
+            document.write(array);
+        };
+        getRndInteger();
+        // let result = 0;
+        // function getRandom() {
+        //     let max = +prompt("nhập số lớn nhất");
+        //     getRndInteger(max);
+        //     let num = +prompt("nhập số giá trị cần lấy ra");
+        //     let array = [];
+        //     for (let i = 1; i<= num; i++) {
+        //         array.push().getRndInteger(maxx);
+        //     }
+        //     console.log(array);
+        // }
+        // getRandom();
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\obj\Debug\netcoreapp3.1\convertnumber.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\obj\Debug\netcoreapp3.1\convertnumber.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\obj\Debug\netcoreapp3.1\convertnumber.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\obj\Debug\netcoreapp3.1\convertnumber.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\bin\Debug\netcoreapp3.1\convertnumber.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\bin\Debug\netcoreapp3.1\convertnumber.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\bin\Debug\netcoreapp3.1\convertnumber.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\bin\Debug\netcoreapp3.1\convertnumber.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\bin\Debug\netcoreapp3.1\convertnumber.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\bin\Debug\netcoreapp3.1\convertnumber.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\obj\Debug\netcoreapp3.1\convertnumber.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\obj\Debug\netcoreapp3.1\convertnumber.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\convertnumber\convertnumber\obj\Debug\netcoreapp3.1\convertnumber.genruntimeconfig.cache

@@ -22,7 +22,7 @@ home.load = function() {
                                 '<p class="card-text" id="productPrice" >'+ convertCurency(value.price) +"&#8363;" +'</p>'+
                             '</div>' +
                             '<div class="card-footer">'+
-                                '<input type="number" id="quantity'+ value.id +'" class="input-text qty text" step="1" min="1" max="9999" name="quantity" value="1" title="SL" size="1" inputmode="numeric">'+
+                                '<input type="number" id="quantity'+ value.id +'" class="input-text qty text" step="1" min="1" max="9999" name="quantity" value="1" title="SL" size="1" inputmode="numeric" > '+
                                 '<br>'+      
                                 '<br>'+                        
                                 '<button class="btn btn-primary"  onclick="add2cart('+value.id+')"  >Add To Cart</button>'+
@@ -42,12 +42,6 @@ home.init = function(){
 $(document).ready(function(){
     home.init();
 });
-home.buy = function(){
-    bootbox.alert({
-        message: "Sản phẩm đã được thêm vào giỏ hàng!"
-    })
-}
-
 function convertCurency (val) {
     return val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
 }

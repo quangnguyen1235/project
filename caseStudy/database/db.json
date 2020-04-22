@@ -14,21 +14,15 @@
     },
     {
       "fullName": "Nguyễn Đăng Quang",
-      "gender": "1",
+      "gender": "male",
       "dob": "1998-01-20",
       "id": 3
     },
     {
-      "fullName": "fuck",
-      "gender": "1",
-      "dob": "0022-02-22",
-      "id": 4
-    },
-    {
-      "fullName": "quang",
+      "fullName": "nguyễn đăng quang",
       "gender": "Male",
-      "dob": "1998-02-01",
-      "id": 5
+      "dob": "2020-03-18",
+      "id": 4
     }
   ],
   "courses": [

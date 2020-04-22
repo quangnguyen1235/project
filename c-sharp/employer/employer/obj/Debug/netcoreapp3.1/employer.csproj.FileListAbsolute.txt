@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\bin\Debug\netcoreapp3.1\employer.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\bin\Debug\netcoreapp3.1\employer.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\bin\Debug\netcoreapp3.1\employer.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\bin\Debug\netcoreapp3.1\employer.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\bin\Debug\netcoreapp3.1\employer.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\bin\Debug\netcoreapp3.1\employer.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\obj\Debug\netcoreapp3.1\employer.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\obj\Debug\netcoreapp3.1\employer.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\obj\Debug\netcoreapp3.1\employer.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\obj\Debug\netcoreapp3.1\employer.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\obj\Debug\netcoreapp3.1\employer.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\obj\Debug\netcoreapp3.1\employer.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\employer\employer\obj\Debug\netcoreapp3.1\employer.genruntimeconfig.cache
