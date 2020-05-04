@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\obj\Debug\netcoreapp3.1\CircleAndCyclin.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\obj\Debug\netcoreapp3.1\CircleAndCyclin.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\obj\Debug\netcoreapp3.1\CircleAndCyclin.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\obj\Debug\netcoreapp3.1\CircleAndCyclin.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\bin\Debug\netcoreapp3.1\CircleAndCyclin.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\bin\Debug\netcoreapp3.1\CircleAndCyclin.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\bin\Debug\netcoreapp3.1\CircleAndCyclin.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\bin\Debug\netcoreapp3.1\CircleAndCyclin.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\bin\Debug\netcoreapp3.1\CircleAndCyclin.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\bin\Debug\netcoreapp3.1\CircleAndCyclin.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\obj\Debug\netcoreapp3.1\CircleAndCyclin.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\obj\Debug\netcoreapp3.1\CircleAndCyclin.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\CircleAndCyclin\CircleAndCyclin\obj\Debug\netcoreapp3.1\CircleAndCyclin.genruntimeconfig.cache

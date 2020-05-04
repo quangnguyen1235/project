@@ -14,17 +14,8 @@ public class Example
 		int option = 0;
 		do
 		{
-			Console.WriteLine("PhoneBook Management System");
-			Console.WriteLine("----------------------------------");
-			if (phonebook.IsEmpty())
-			{
-				Console.WriteLine(" 1.Add Contact \n 6.Exit");
-			}
-			else
-			{
-				Console.WriteLine(" 1.Add Contact \n 2.Update Contact \n 3.Remove Contact \n 4.Search Contract \n 5.Show Contacts \n 6.Exit");
-			}
 			
+			Console.WriteLine(" 1.Add Contact \n 2.Update Contact \n 3.Remove Contact \n 4.Search Contract \n 5.Soft \n 6.Exit");	
 			Console.Write("Your option: ");
 			if (int.TryParse(Console.ReadLine(), out int number))
 			{
@@ -46,45 +37,47 @@ public class Example
 					name = Console.ReadLine();
 					Console.Write("Pls input phonenumber: ");
 					phoneNumber = Console.ReadLine();
-					Contact newContact = new Contact(name, phoneNumber);
-					phonebook.Add(newContact);
-					Console.Clear();
+					phonebook.InsertPhone(name, phoneNumber);
+					Console.ReadKey();
 					break;
 				}
 			case 2:
 				{
 					Console.Write("Pls input name: ");
 					name = Console.ReadLine();
-					Console.Write("Pls input phonenumber: ");
-					phoneNumber = Console.ReadLine();
-					phonebook.Update(name,phoneNumber);
-					Console.Clear();
+					phonebook.UpdatePhone(name);
+					Console.ReadKey();
 					break;
 				}
 			case 3:
 				{
 					Console.Write("Pls input name to remove: ");
 					name = Console.ReadLine();
-					phonebook.Remove(name);
-					Console.Clear();
+					phonebook.RemovePhone(name);
+					Console.ReadKey();
 					break;
 				}
 			case 4:
 				{
 					Console.Write("Pls input name to search: ");
 					name = Console.ReadLine();
-					phonebook.Search(name);
-					Console.Clear();
+					phonebook.SearchPhone(name);
+					Console.ReadKey();
 					break;
 				}
 			case 5:
 				{
 
-					phonebook.ShowContact();
+					phonebook.Sort(ref phonebook);
+					for (int i = 0; i < phonebook.PhoneList.Length; i++)
+					{
+						Console.WriteLine(phonebook.PhoneList[i].ShowContact());
+					}
 					//Console.Clear();
+					Console.ReadKey();
 					break;
 				}
-			case 6:
+				case 6:
 				{
 					Environment.Exit(Environment.ExitCode);
 					break;

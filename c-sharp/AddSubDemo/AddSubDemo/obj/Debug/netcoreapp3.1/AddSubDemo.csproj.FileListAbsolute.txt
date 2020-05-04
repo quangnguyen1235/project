@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\bin\Debug\netcoreapp3.1\AddSubDemo.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\bin\Debug\netcoreapp3.1\AddSubDemo.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\bin\Debug\netcoreapp3.1\AddSubDemo.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\bin\Debug\netcoreapp3.1\AddSubDemo.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\bin\Debug\netcoreapp3.1\AddSubDemo.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\bin\Debug\netcoreapp3.1\AddSubDemo.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\obj\Debug\netcoreapp3.1\AddSubDemo.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\obj\Debug\netcoreapp3.1\AddSubDemo.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\obj\Debug\netcoreapp3.1\AddSubDemo.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\obj\Debug\netcoreapp3.1\AddSubDemo.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\obj\Debug\netcoreapp3.1\AddSubDemo.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\obj\Debug\netcoreapp3.1\AddSubDemo.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\AddSubDemo\AddSubDemo\obj\Debug\netcoreapp3.1\AddSubDemo.genruntimeconfig.cache

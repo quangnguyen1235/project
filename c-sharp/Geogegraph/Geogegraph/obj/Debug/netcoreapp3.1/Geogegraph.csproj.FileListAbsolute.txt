@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\bin\Debug\netcoreapp3.1\Geogegraph.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\bin\Debug\netcoreapp3.1\Geogegraph.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\bin\Debug\netcoreapp3.1\Geogegraph.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\bin\Debug\netcoreapp3.1\Geogegraph.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\bin\Debug\netcoreapp3.1\Geogegraph.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\bin\Debug\netcoreapp3.1\Geogegraph.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\obj\Debug\netcoreapp3.1\Geogegraph.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\obj\Debug\netcoreapp3.1\Geogegraph.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\obj\Debug\netcoreapp3.1\Geogegraph.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\obj\Debug\netcoreapp3.1\Geogegraph.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\obj\Debug\netcoreapp3.1\Geogegraph.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\obj\Debug\netcoreapp3.1\Geogegraph.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\Geogegraph\Geogegraph\obj\Debug\netcoreapp3.1\Geogegraph.genruntimeconfig.cache
