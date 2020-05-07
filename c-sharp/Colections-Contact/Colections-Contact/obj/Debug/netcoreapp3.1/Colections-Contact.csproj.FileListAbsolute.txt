@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\bin\Debug\netcoreapp3.1\Colections-Contact.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\bin\Debug\netcoreapp3.1\Colections-Contact.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\bin\Debug\netcoreapp3.1\Colections-Contact.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\bin\Debug\netcoreapp3.1\Colections-Contact.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\bin\Debug\netcoreapp3.1\Colections-Contact.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\bin\Debug\netcoreapp3.1\Colections-Contact.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\obj\Debug\netcoreapp3.1\Colections-Contact.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\obj\Debug\netcoreapp3.1\Colections-Contact.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\obj\Debug\netcoreapp3.1\Colections-Contact.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\obj\Debug\netcoreapp3.1\Colections-Contact.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\obj\Debug\netcoreapp3.1\Colections-Contact.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\obj\Debug\netcoreapp3.1\Colections-Contact.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\Colections-Contact\Colections-Contact\obj\Debug\netcoreapp3.1\Colections-Contact.genruntimeconfig.cache

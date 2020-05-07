@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsManagementSystem", "NewsManagementSystem\NewsManagementSystem.csproj", "{FA7BFE3E-3471-4A50-998D-88BA80DE1BC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA7BFE3E-3471-4A50-998D-88BA80DE1BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7BFE3E-3471-4A50-998D-88BA80DE1BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7BFE3E-3471-4A50-998D-88BA80DE1BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7BFE3E-3471-4A50-998D-88BA80DE1BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF0A4C81-A9C9-450E-9D0E-937AD51714F2}
+	EndGlobalSection
+EndGlobal

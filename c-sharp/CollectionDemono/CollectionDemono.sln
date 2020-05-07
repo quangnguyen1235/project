@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionDemono", "CollectionDemono\CollectionDemono.csproj", "{4350B3E1-57CA-4F14-A875-A445251F5334}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4350B3E1-57CA-4F14-A875-A445251F5334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4350B3E1-57CA-4F14-A875-A445251F5334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4350B3E1-57CA-4F14-A875-A445251F5334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4350B3E1-57CA-4F14-A875-A445251F5334}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BC1AECC-CF2D-4BF2-A4DB-8E6832FD2D17}
+	EndGlobalSection
+EndGlobal

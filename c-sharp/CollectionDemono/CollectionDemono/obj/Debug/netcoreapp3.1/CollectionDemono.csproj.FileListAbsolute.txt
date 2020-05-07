@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\bin\Debug\netcoreapp3.1\CollectionDemono.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\bin\Debug\netcoreapp3.1\CollectionDemono.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\bin\Debug\netcoreapp3.1\CollectionDemono.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\bin\Debug\netcoreapp3.1\CollectionDemono.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\bin\Debug\netcoreapp3.1\CollectionDemono.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\bin\Debug\netcoreapp3.1\CollectionDemono.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\obj\Debug\netcoreapp3.1\CollectionDemono.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\obj\Debug\netcoreapp3.1\CollectionDemono.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\obj\Debug\netcoreapp3.1\CollectionDemono.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\obj\Debug\netcoreapp3.1\CollectionDemono.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\obj\Debug\netcoreapp3.1\CollectionDemono.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\obj\Debug\netcoreapp3.1\CollectionDemono.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\CollectionDemono\CollectionDemono\obj\Debug\netcoreapp3.1\CollectionDemono.genruntimeconfig.cache

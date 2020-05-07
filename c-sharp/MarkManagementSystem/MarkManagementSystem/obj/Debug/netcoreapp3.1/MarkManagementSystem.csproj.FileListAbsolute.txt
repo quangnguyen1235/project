@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\bin\Debug\netcoreapp3.1\MarkManagementSystem.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\bin\Debug\netcoreapp3.1\MarkManagementSystem.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\bin\Debug\netcoreapp3.1\MarkManagementSystem.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\bin\Debug\netcoreapp3.1\MarkManagementSystem.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\bin\Debug\netcoreapp3.1\MarkManagementSystem.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\bin\Debug\netcoreapp3.1\MarkManagementSystem.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\obj\Debug\netcoreapp3.1\MarkManagementSystem.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\obj\Debug\netcoreapp3.1\MarkManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\obj\Debug\netcoreapp3.1\MarkManagementSystem.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\obj\Debug\netcoreapp3.1\MarkManagementSystem.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\obj\Debug\netcoreapp3.1\MarkManagementSystem.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\obj\Debug\netcoreapp3.1\MarkManagementSystem.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\MarkManagementSystem\MarkManagementSystem\obj\Debug\netcoreapp3.1\MarkManagementSystem.genruntimeconfig.cache
