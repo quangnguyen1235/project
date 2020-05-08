@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\bin\Debug\netcoreapp3.1\OOP_Examination.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\bin\Debug\netcoreapp3.1\OOP_Examination.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\bin\Debug\netcoreapp3.1\OOP_Examination.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\bin\Debug\netcoreapp3.1\OOP_Examination.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\bin\Debug\netcoreapp3.1\OOP_Examination.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\bin\Debug\netcoreapp3.1\OOP_Examination.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\obj\Debug\netcoreapp3.1\OOP_Examination.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\obj\Debug\netcoreapp3.1\OOP_Examination.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\obj\Debug\netcoreapp3.1\OOP_Examination.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\obj\Debug\netcoreapp3.1\OOP_Examination.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\obj\Debug\netcoreapp3.1\OOP_Examination.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\obj\Debug\netcoreapp3.1\OOP_Examination.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\OOP_Examination\obj\Debug\netcoreapp3.1\OOP_Examination.genruntimeconfig.cache

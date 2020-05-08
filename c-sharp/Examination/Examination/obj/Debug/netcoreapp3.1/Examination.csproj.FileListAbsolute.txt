@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\bin\Debug\netcoreapp3.1\Examination.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\bin\Debug\netcoreapp3.1\Examination.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\bin\Debug\netcoreapp3.1\Examination.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\bin\Debug\netcoreapp3.1\Examination.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\bin\Debug\netcoreapp3.1\Examination.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\bin\Debug\netcoreapp3.1\Examination.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\obj\Debug\netcoreapp3.1\Examination.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\obj\Debug\netcoreapp3.1\Examination.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\obj\Debug\netcoreapp3.1\Examination.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\obj\Debug\netcoreapp3.1\Examination.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\obj\Debug\netcoreapp3.1\Examination.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\obj\Debug\netcoreapp3.1\Examination.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\Examination\Examination\obj\Debug\netcoreapp3.1\Examination.genruntimeconfig.cache

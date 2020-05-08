@@ -34,14 +34,14 @@ namespace MarkManagementSystem
         public void Calculator()
         {
             float total = 0;
-            //foreach (var item in SubjectMarkList)
-            //{
-            //    total += SubjectMarkList[item];
-            //}
-            for (int i = 0; i < SubjectMarkList.Length; i++)
+            foreach (var item in SubjectMarkList)
             {
-                total += SubjectMarkList[i];
+                total += item;
             }
+            //for (int i = 0; i < SubjectMarkList.Length; i++)
+            //{
+            //    total += SubjectMarkList[i];
+            //}
             averageMark = total / SubjectMarkList.Length;
         }
     }
