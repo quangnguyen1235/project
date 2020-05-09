@@ -1,0 +1,13 @@
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\bin\Debug\netcoreapp3.1\MyListGeneric.exe
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\bin\Debug\netcoreapp3.1\MyListGeneric.deps.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\bin\Debug\netcoreapp3.1\MyListGeneric.runtimeconfig.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\bin\Debug\netcoreapp3.1\MyListGeneric.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\bin\Debug\netcoreapp3.1\MyListGeneric.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\bin\Debug\netcoreapp3.1\MyListGeneric.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\obj\Debug\netcoreapp3.1\MyListGeneric.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\obj\Debug\netcoreapp3.1\MyListGeneric.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\obj\Debug\netcoreapp3.1\MyListGeneric.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\obj\Debug\netcoreapp3.1\MyListGeneric.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\obj\Debug\netcoreapp3.1\MyListGeneric.dll
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\obj\Debug\netcoreapp3.1\MyListGeneric.pdb
+C:\Users\ADMIN\Documents\project\project\c-sharp\MyListGeneric\MyListGeneric\obj\Debug\netcoreapp3.1\MyListGeneric.genruntimeconfig.cache

@@ -24,9 +24,9 @@ namespace OOP_Examination
             this.content = content;
             this.author = author;
         }
-        public float CalculatorRate()
+        public void CalculatorRate()
         {
-            return averageRate = ((float)(Rates[0] + Rates[1] + Rates[2])) / 3;
+            averageRate = ((float)(Rates[0] + Rates[1] + Rates[2])) / 3;
         }
 
         public void Display()

@@ -7,6 +7,6 @@ namespace OOP_Examination
     interface IPost
     {
         void Display();
-        float CalculatorRate();
+        void CalculatorRate();
     }
 }
