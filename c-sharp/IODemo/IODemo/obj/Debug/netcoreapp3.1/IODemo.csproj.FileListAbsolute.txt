@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcoreapp3.1\IODemo.exe
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcoreapp3.1\IODemo.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcoreapp3.1\IODemo.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcoreapp3.1\IODemo.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcoreapp3.1\IODemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcoreapp3.1\IODemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.genruntimeconfig.cache

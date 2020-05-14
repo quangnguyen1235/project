@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\bin\Debug\netcoreapp3.1\SortDemo.exe
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\bin\Debug\netcoreapp3.1\SortDemo.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\bin\Debug\netcoreapp3.1\SortDemo.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\bin\Debug\netcoreapp3.1\SortDemo.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\bin\Debug\netcoreapp3.1\SortDemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\bin\Debug\netcoreapp3.1\SortDemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\obj\Debug\netcoreapp3.1\SortDemo.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\obj\Debug\netcoreapp3.1\SortDemo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\obj\Debug\netcoreapp3.1\SortDemo.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\obj\Debug\netcoreapp3.1\SortDemo.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\obj\Debug\netcoreapp3.1\SortDemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\obj\Debug\netcoreapp3.1\SortDemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\SortDemo\SortDemo\obj\Debug\netcoreapp3.1\SortDemo.genruntimeconfig.cache

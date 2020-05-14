@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\bin\Debug\netcoreapp3.1\MatrixDemo.exe
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\bin\Debug\netcoreapp3.1\MatrixDemo.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\bin\Debug\netcoreapp3.1\MatrixDemo.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\bin\Debug\netcoreapp3.1\MatrixDemo.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\bin\Debug\netcoreapp3.1\MatrixDemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\bin\Debug\netcoreapp3.1\MatrixDemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\obj\Debug\netcoreapp3.1\MatrixDemo.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\obj\Debug\netcoreapp3.1\MatrixDemo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\obj\Debug\netcoreapp3.1\MatrixDemo.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\obj\Debug\netcoreapp3.1\MatrixDemo.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\obj\Debug\netcoreapp3.1\MatrixDemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\obj\Debug\netcoreapp3.1\MatrixDemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\MatrixDemo\MatrixDemo\obj\Debug\netcoreapp3.1\MatrixDemo.genruntimeconfig.cache

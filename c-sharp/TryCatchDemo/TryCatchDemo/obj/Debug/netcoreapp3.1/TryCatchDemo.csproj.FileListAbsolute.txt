@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\bin\Debug\netcoreapp3.1\TryCatchDemo.exe
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\bin\Debug\netcoreapp3.1\TryCatchDemo.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\bin\Debug\netcoreapp3.1\TryCatchDemo.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\bin\Debug\netcoreapp3.1\TryCatchDemo.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\bin\Debug\netcoreapp3.1\TryCatchDemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\bin\Debug\netcoreapp3.1\TryCatchDemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\obj\Debug\netcoreapp3.1\TryCatchDemo.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\obj\Debug\netcoreapp3.1\TryCatchDemo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\obj\Debug\netcoreapp3.1\TryCatchDemo.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\obj\Debug\netcoreapp3.1\TryCatchDemo.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\obj\Debug\netcoreapp3.1\TryCatchDemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\obj\Debug\netcoreapp3.1\TryCatchDemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\TryCatchDemo\TryCatchDemo\obj\Debug\netcoreapp3.1\TryCatchDemo.genruntimeconfig.cache

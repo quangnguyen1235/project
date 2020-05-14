@@ -1,0 +1,10 @@
+Sum matrix: 157
+Qlt of Prime: 16
+Qlt of OldNumber: 11
+Sum of Digonal: 36
+5 5
+12	18	24	21	27	
+6	15	12	18	27	
+27	24	21	15	12	
+6	18	15	21	24	
+24	24	21	15	24	

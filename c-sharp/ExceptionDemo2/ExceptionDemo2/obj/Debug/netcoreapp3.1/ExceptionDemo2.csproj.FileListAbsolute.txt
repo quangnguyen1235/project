@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\bin\Debug\netcoreapp3.1\ExceptionDemo2.exe
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\bin\Debug\netcoreapp3.1\ExceptionDemo2.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\bin\Debug\netcoreapp3.1\ExceptionDemo2.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\bin\Debug\netcoreapp3.1\ExceptionDemo2.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\bin\Debug\netcoreapp3.1\ExceptionDemo2.dll
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\bin\Debug\netcoreapp3.1\ExceptionDemo2.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\obj\Debug\netcoreapp3.1\ExceptionDemo2.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\obj\Debug\netcoreapp3.1\ExceptionDemo2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\obj\Debug\netcoreapp3.1\ExceptionDemo2.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\obj\Debug\netcoreapp3.1\ExceptionDemo2.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\obj\Debug\netcoreapp3.1\ExceptionDemo2.dll
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\obj\Debug\netcoreapp3.1\ExceptionDemo2.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\ExceptionDemo2\ExceptionDemo2\obj\Debug\netcoreapp3.1\ExceptionDemo2.genruntimeconfig.cache
