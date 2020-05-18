@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\bin\Debug\netcoreapp3.1\StudentManagementJson.exe
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\obj\Debug\netcoreapp3.1\StudentManagementJson.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\obj\Debug\netcoreapp3.1\StudentManagementJson.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\obj\Debug\netcoreapp3.1\StudentManagementJson.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\bin\Debug\netcoreapp3.1\StudentManagementJson.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\bin\Debug\netcoreapp3.1\StudentManagementJson.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\bin\Debug\netcoreapp3.1\StudentManagementJson.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\bin\Debug\netcoreapp3.1\StudentManagementJson.dll
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\bin\Debug\netcoreapp3.1\StudentManagementJson.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\obj\Debug\netcoreapp3.1\StudentManagementJson.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\obj\Debug\netcoreapp3.1\StudentManagementJson.csproj.CopyComplete
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\obj\Debug\netcoreapp3.1\StudentManagementJson.dll
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\obj\Debug\netcoreapp3.1\StudentManagementJson.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\StudentManagementJson\StudentManagementJson\obj\Debug\netcoreapp3.1\StudentManagementJson.genruntimeconfig.cache

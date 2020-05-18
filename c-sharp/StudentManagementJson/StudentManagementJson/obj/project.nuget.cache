@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lTebfXCTh4VunybFshb3+CFBhTPD/MhMCkRxAdltTu9XAFwTbiZF4BMEhda5PSiIlPwLTErGw5BNsruFd5keug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\project\\project\\c-sharp\\StudentManagementJson\\StudentManagementJson\\StudentManagementJson.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

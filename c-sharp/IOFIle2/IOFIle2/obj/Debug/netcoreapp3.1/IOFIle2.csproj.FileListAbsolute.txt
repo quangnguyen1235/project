@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\obj\Debug\netcoreapp3.1\IOFIle2.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\obj\Debug\netcoreapp3.1\IOFIle2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\obj\Debug\netcoreapp3.1\IOFIle2.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\obj\Debug\netcoreapp3.1\IOFIle2.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\bin\Debug\netcoreapp3.1\IOFIle2.exe
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\bin\Debug\netcoreapp3.1\IOFIle2.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\bin\Debug\netcoreapp3.1\IOFIle2.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\bin\Debug\netcoreapp3.1\IOFIle2.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\bin\Debug\netcoreapp3.1\IOFIle2.dll
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\bin\Debug\netcoreapp3.1\IOFIle2.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\obj\Debug\netcoreapp3.1\IOFIle2.csproj.CopyComplete
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\obj\Debug\netcoreapp3.1\IOFIle2.dll
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\obj\Debug\netcoreapp3.1\IOFIle2.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\IOFIle2\IOFIle2\obj\Debug\netcoreapp3.1\IOFIle2.genruntimeconfig.cache

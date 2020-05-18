@@ -3,10 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>IODemo.MatrixIODemo</StartupObject>
+    <StartupObject>IODemo.FileStreamDemo</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="A\B\" />
     <Folder Include="Files\" />
   </ItemGroup>
 

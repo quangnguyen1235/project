@@ -5,7 +5,6 @@ C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcore
 C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcoreapp3.1\IODemo.dll
 C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\bin\Debug\netcoreapp3.1\IODemo.pdb
 C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.csprojAssemblyReference.cache
-C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.AssemblyInfoInputs.cache
 C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.AssemblyInfo.cs
 C:\Users\Admin\Documents\project\project\c-sharp\IODemo\IODemo\obj\Debug\netcoreapp3.1\IODemo.dll
