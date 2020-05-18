@@ -1,0 +1,45 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "quang",
+      "gender": true,
+      "level": "12",
+      "subjects": [
+        {
+          "subName": "Math",
+          "score": 8
+        },
+        {
+          "subName": "Physical",
+          "score": 7
+        },
+        {
+          "subName": "Chemistry",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "minh",
+      "gender": true,
+      "level": "12",
+      "subjects": [
+        {
+          "subName": "Math",
+          "score": 9
+        },
+        {
+          "subName": "Physical",
+          "score": 7
+        },
+        {
+          "subName": "Chemistry",
+          "score": 10
+        }
+      ]
+    }
+  ]
+
+}
