@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\bin\Debug\netcoreapp3.1\Review.exe
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\bin\Debug\netcoreapp3.1\Review.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\bin\Debug\netcoreapp3.1\Review.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\bin\Debug\netcoreapp3.1\Review.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\bin\Debug\netcoreapp3.1\Review.dll
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\bin\Debug\netcoreapp3.1\Review.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\obj\Debug\netcoreapp3.1\Review.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\obj\Debug\netcoreapp3.1\Review.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\obj\Debug\netcoreapp3.1\Review.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\obj\Debug\netcoreapp3.1\Review.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\obj\Debug\netcoreapp3.1\Review.dll
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\obj\Debug\netcoreapp3.1\Review.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Review\obj\Debug\netcoreapp3.1\Review.genruntimeconfig.cache

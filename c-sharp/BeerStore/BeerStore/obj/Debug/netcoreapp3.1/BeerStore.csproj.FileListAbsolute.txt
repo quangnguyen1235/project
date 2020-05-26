@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\bin\Debug\netcoreapp3.1\BeerStore.exe
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\obj\Debug\netcoreapp3.1\BeerStore.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\obj\Debug\netcoreapp3.1\BeerStore.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\obj\Debug\netcoreapp3.1\BeerStore.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\bin\Debug\netcoreapp3.1\BeerStore.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\bin\Debug\netcoreapp3.1\BeerStore.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\bin\Debug\netcoreapp3.1\BeerStore.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\bin\Debug\netcoreapp3.1\BeerStore.dll
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\bin\Debug\netcoreapp3.1\BeerStore.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\obj\Debug\netcoreapp3.1\BeerStore.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\obj\Debug\netcoreapp3.1\BeerStore.csproj.CopyComplete
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\obj\Debug\netcoreapp3.1\BeerStore.dll
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\obj\Debug\netcoreapp3.1\BeerStore.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\BeerStore\BeerStore\obj\Debug\netcoreapp3.1\BeerStore.genruntimeconfig.cache

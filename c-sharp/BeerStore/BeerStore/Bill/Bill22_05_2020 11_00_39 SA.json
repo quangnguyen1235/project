@@ -1,0 +1,13 @@
+{
+  "paid": true,
+  "total": 85000,
+  "paymentTime": "2020-05-22T11:00:50.4387531+07:00",
+  "products": [
+    {
+      "name": "tiger",
+      "price": 17000,
+      "qlt": 5,
+      "money": 85000
+    }
+  ]
+}

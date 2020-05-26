@@ -1,0 +1,20 @@
+{
+  "Food": [
+    {
+      "foodName": "coffee",
+      "price": 10000
+    },
+    {
+      "foodname": "milk tea",
+      "price": 15000
+    },
+    {
+      "foodName": "lemon tea",
+      "price": 12000
+    },
+    {
+      "foodName": "matchiato",
+      "price": 12000
+    }
+  ]
+}

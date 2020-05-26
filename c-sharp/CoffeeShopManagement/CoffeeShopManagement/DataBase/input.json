@@ -1,0 +1,16 @@
+{
+  "order":[
+    {
+      "tableNo": "1",
+      "paid": false,
+      "timeIn": "19/05/2020 8:35AM",
+      "invoiceDetails": [
+        {
+          "foodName": "cafe",
+          "price": 10000,
+          "qlt": 2
+        }
+      ]
+    }
+  ]
+}

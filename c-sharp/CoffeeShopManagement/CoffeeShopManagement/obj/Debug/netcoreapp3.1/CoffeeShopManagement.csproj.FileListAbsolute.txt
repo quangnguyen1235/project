@@ -1,0 +1,4 @@
+C:\Users\Admin\Documents\project\project\c-sharp\CoffeeShopManagement\CoffeeShopManagement\bin\Debug\netcoreapp3.1\CoffeeShopManagement.exe
+C:\Users\Admin\Documents\project\project\c-sharp\CoffeeShopManagement\CoffeeShopManagement\obj\Debug\netcoreapp3.1\CoffeeShopManagement.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\CoffeeShopManagement\CoffeeShopManagement\obj\Debug\netcoreapp3.1\CoffeeShopManagement.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\CoffeeShopManagement\CoffeeShopManagement\obj\Debug\netcoreapp3.1\CoffeeShopManagement.AssemblyInfo.cs

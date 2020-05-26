@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LxaPWlW4iQbutCTGEF8zNPjQd+UKKPfnYG9GBWw0fiEf1xgiJtfq7rWSLftlnBeEHPg5890AsIlPerZNZa3nXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\project\\project\\c-sharp\\BeerStore2\\BeerStore2\\BeerStore2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

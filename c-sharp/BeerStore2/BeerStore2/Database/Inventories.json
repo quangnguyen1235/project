@@ -1,0 +1,24 @@
+{
+  "inventories": [
+    {
+      "name": "huda",
+      "qlt": 95,
+      "price": 12000
+    },
+    {
+      "name": "heneken",
+      "qlt": 100,
+      "price": 15000
+    },
+    {
+      "name": "tiger",
+      "qlt": 100,
+      "price": 17000
+    },
+    {
+      "name": "saigon",
+      "qlt": 100,
+      "price": 10000
+    }
+  ]
+}

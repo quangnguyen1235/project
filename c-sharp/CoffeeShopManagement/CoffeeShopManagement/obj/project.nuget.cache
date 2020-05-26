@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vCJEroZB0DATRxZYVPdT7ifyWGrDoayX1cxM9q+HPQtqAj9f6K5N2CpGVJvKSTGPItPKHe++msq90JwRvfQdjA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\project\\project\\c-sharp\\CoffeeShopManagement\\CoffeeShopManagement\\CoffeeShopManagement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
