@@ -1,1 +1,24 @@
-{"inventories":[{"name":"huda","price":12000,"qlt":5},{"name":"heneken","price":15000,"qlt":60},{"name":"tiger","price":17000,"qlt":83},{"name":"saigon","price":15000,"qlt":100}]}
+{
+  "inventories": [
+    {
+      "name": "huda",
+      "price": 12000,
+      "qlt": 5
+    },
+    {
+      "name": "heneken",
+      "price": 15000,
+      "qlt": 60
+    },
+    {
+      "name": "tiger",
+      "price": 17000,
+      "qlt": 83
+    },
+    {
+      "name": "saigon",
+      "price": 15000,
+      "qlt": 100
+    }
+  ]
+}

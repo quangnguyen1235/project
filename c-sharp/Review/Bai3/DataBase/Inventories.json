@@ -1,0 +1,28 @@
+{
+  "inventories": [
+    {
+      "id": 1,
+      "name": "huda",
+      "price": 10000,
+      "remain": 100
+    },
+    {
+      "id": 2,
+      "name": "henekein",
+      "price": 15000,
+      "remain": 100
+    },
+    {
+      "id": 3,
+      "name": "tiger",
+      "price": 17000,
+      "remain": 100
+    },
+    {
+      "id": 4,
+      "name": "saigon",
+      "price": 12000,
+      "remain": 100
+    }
+  ]
+}

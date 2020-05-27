@@ -4,11 +4,13 @@ using System.Text;
 
 namespace Review
 {
-    static class helper
+    class Arr
     {
-        static int[] CreateArray(int n) 
+        public int[] arr { get; set; }
+        public int lenght { get; set; }
+        public int[] CreateArray(int n)
         {
-            int[] arr = new int[n];
+            arr = new int[n];
             Random rnd = new Random();
             for (int i = 0; i < arr.Length; i++)
             {
@@ -16,9 +18,9 @@ namespace Review
             }
             return arr;
         }
-        public static bool IsSymmetryArray(int[] arr)
+        public bool IsSymmetryArray()
         {
-            for (int i = 0; i < (arr.Length) /2; i++)
+            for (int i = 0; i < (arr.Length) / 2; i++)
             {
                 if (arr[i] != arr[arr.Length - 1 - i])
                 {
@@ -27,9 +29,9 @@ namespace Review
             }
             return true;
         }
-        public static void SelectionSort(ref int[] arr)
+        public void SelectionSort()
         {
-            if (CheckArr(arr) == false)
+            if (CheckArr() == false)
             {
                 for (int i = 0; i < arr.Length - 1; i++)
                 {
@@ -51,29 +53,29 @@ namespace Review
                 }
             }
         }
-        public static int Find(int found ,int[] arr, int left, int right)
+        public int Find(int found, int left, int right)
         {
             if (right >= left)
             {
-                int mid = (left + (right - left)) / 2;
+                int mid = (left + right) / 2;
                 if (arr[mid] == found)
                 {
                     return mid;
                 }
-                if (arr[mid] < found)
-                {
-                    return Find(found, arr, mid + 1, right);
-                }
                 if (arr[mid] > found)
                 {
-                    return Find(found, arr, left, mid - 1);
+                    return Find(found, left, (mid - 1));
+                }
+                if (arr[mid] < found)
+                {
+                    return Find(found, (mid + 1), right);
                 }
             }
             return -1;
         }
-        private static bool CheckArr(int[] arr)
+        public bool CheckArr()
         {
-            for(int i = 0; i < arr.Length-1; i++)
+            for (int i = 0; i < arr.Length - 1; i++)
             {
                 if (arr[i] > arr[i + 1])
                 {
@@ -82,6 +84,14 @@ namespace Review
             }
             return true;
         }
-
+        public override string ToString()
+        {
+            string result = "";
+            foreach(var item in arr)
+            {
+                result += item + " ";
+            }
+            return result;
+        }
     }
 }
