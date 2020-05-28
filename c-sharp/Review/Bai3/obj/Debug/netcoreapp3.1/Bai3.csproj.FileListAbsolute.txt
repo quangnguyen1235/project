@@ -2,3 +2,14 @@ C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\bin\Debug\netcoreap
 C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\obj\Debug\netcoreapp3.1\Bai3.csprojAssemblyReference.cache
 C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\obj\Debug\netcoreapp3.1\Bai3.AssemblyInfoInputs.cache
 C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\obj\Debug\netcoreapp3.1\Bai3.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\bin\Debug\netcoreapp3.1\Bai3.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\bin\Debug\netcoreapp3.1\Bai3.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\bin\Debug\netcoreapp3.1\Bai3.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\bin\Debug\netcoreapp3.1\Bai3.dll
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\bin\Debug\netcoreapp3.1\Bai3.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\obj\Debug\netcoreapp3.1\Bai3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\obj\Debug\netcoreapp3.1\Bai3.csproj.CopyComplete
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\obj\Debug\netcoreapp3.1\Bai3.dll
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\obj\Debug\netcoreapp3.1\Bai3.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\Review\Bai3\obj\Debug\netcoreapp3.1\Bai3.genruntimeconfig.cache

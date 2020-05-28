@@ -13,12 +13,9 @@ namespace Bai3.Modal
             this.name = name;
             this.loginDetail = newLogin;
         }
-        public void editPassWord(string password, string newPass)
+        public void EditPassWord(string newPass)
         {
-            if(loginDetail.Pass == password)
-            {
-                loginDetail.Pass = newPass;
-            }
+            loginDetail.Pass = newPass;
         }
     }
 }

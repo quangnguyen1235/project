@@ -7,7 +7,6 @@ namespace Review
     class Arr
     {
         public int[] arr { get; set; }
-        public int lenght { get; set; }
         public int[] CreateArray(int n)
         {
             arr = new int[n];

@@ -1,10 +1,24 @@
 {
   "staffs": [
     {
-      "name": "QuangNguyen",
+      "name": "Quang Nguyen",
       "loginDetail": {
-        "email": "nguyendangquanghbt12b7@gmail.com",
-        "pass": "quang1235"
+        "Email": "nguyendangquanghbt12b7@gmail.com",
+        "Pass": "quang1235"
+      }
+    },
+    {
+      "name": "Hau Le",
+      "loginDetail": {
+        "Email": "haulelovevy@gmail.com",
+        "Pass": "hauyeuvy"
+      }
+    },
+    {
+      "name": "Tram Le",
+      "loginDetail": {
+        "Email": "tramlemummim@gmail.com",
+        "Pass": "tramlemummim"
       }
     }
   ]
