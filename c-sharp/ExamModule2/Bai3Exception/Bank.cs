@@ -105,9 +105,6 @@ namespace Bai3Exception
 				if (checkCustomer(id) == null)
 				{
 					throw new MyException("Ivallid ID");
-				}else if (amount < 0)
-				{
-					throw new MyException("Minus Amount");
 				}
 				checkCustomer(id).PayInto(amount);
 			}
