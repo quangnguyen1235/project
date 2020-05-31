@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\bin\Debug\netcoreapp3.1\Bai1.exe
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\bin\Debug\netcoreapp3.1\Bai1.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\bin\Debug\netcoreapp3.1\Bai1.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\bin\Debug\netcoreapp3.1\Bai1.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\bin\Debug\netcoreapp3.1\Bai1.dll
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\bin\Debug\netcoreapp3.1\Bai1.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\obj\Debug\netcoreapp3.1\Bai1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\obj\Debug\netcoreapp3.1\Bai1.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\obj\Debug\netcoreapp3.1\Bai1.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\obj\Debug\netcoreapp3.1\Bai1.dll
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\obj\Debug\netcoreapp3.1\Bai1.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\obj\Debug\netcoreapp3.1\Bai1.genruntimeconfig.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\ExamModule2\obj\Debug\netcoreapp3.1\Bai1.csprojAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\bin\Debug\netcoreapp3.1\Bai3Exception.exe
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\bin\Debug\netcoreapp3.1\Bai3Exception.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\bin\Debug\netcoreapp3.1\Bai3Exception.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\bin\Debug\netcoreapp3.1\Bai3Exception.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\bin\Debug\netcoreapp3.1\Bai3Exception.dll
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\bin\Debug\netcoreapp3.1\Bai3Exception.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\obj\Debug\netcoreapp3.1\Bai3Exception.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\obj\Debug\netcoreapp3.1\Bai3Exception.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\obj\Debug\netcoreapp3.1\Bai3Exception.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\obj\Debug\netcoreapp3.1\Bai3Exception.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\obj\Debug\netcoreapp3.1\Bai3Exception.dll
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\obj\Debug\netcoreapp3.1\Bai3Exception.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\ExamModule2\Bai3Exception\obj\Debug\netcoreapp3.1\Bai3Exception.genruntimeconfig.cache
