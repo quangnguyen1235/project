@@ -106,6 +106,10 @@ namespace Bai3Exception
 				{
 					throw new Exception("Ivallid ID");
 				}
+				if (-amount > checkCustomer(id).balance)
+				{
+					throw new Exception("Overbalance is not enough");
+				}
 				checkCustomer(id).PayInto(amount);
 			}
 			catch(FormatException fex)
