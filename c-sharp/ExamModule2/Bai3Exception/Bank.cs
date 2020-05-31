@@ -73,12 +73,12 @@ namespace Bai3Exception
 			{
 				if (gender != "male" && gender != "female")
 				{
-					throw new MyException("Ivallid gender fomat");
+					throw new Exception("Ivallid gender fomat");
 				}
 				listAcount.Add(id,new Account(id, firstName, lastName, gender));
 				Increment++;
 			}
-			catch (MyException mexp)
+			catch (Exception mexp)
 			{
 				Console.WriteLine(mexp.Message);
 			}
@@ -104,7 +104,7 @@ namespace Bai3Exception
 				float amount = float.Parse(Console.ReadLine());
 				if (checkCustomer(id) == null)
 				{
-					throw new MyException("Ivallid ID");
+					throw new Exception("Ivallid ID");
 				}
 				checkCustomer(id).PayInto(amount);
 			}
@@ -112,7 +112,7 @@ namespace Bai3Exception
 			{
 				Console.WriteLine(fex.Message);
 			}
-			catch(MyException me)
+			catch(Exception me)
 			{
 				Console.WriteLine(me.Message);
 			}
