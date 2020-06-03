@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\bin\Debug\netcoreapp3.1\RegexDemo.exe
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\bin\Debug\netcoreapp3.1\RegexDemo.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\bin\Debug\netcoreapp3.1\RegexDemo.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\bin\Debug\netcoreapp3.1\RegexDemo.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\bin\Debug\netcoreapp3.1\RegexDemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\bin\Debug\netcoreapp3.1\RegexDemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\obj\Debug\netcoreapp3.1\RegexDemo.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\obj\Debug\netcoreapp3.1\RegexDemo.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\obj\Debug\netcoreapp3.1\RegexDemo.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\obj\Debug\netcoreapp3.1\RegexDemo.dll
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\obj\Debug\netcoreapp3.1\RegexDemo.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\obj\Debug\netcoreapp3.1\RegexDemo.genruntimeconfig.cache
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\obj\Debug\netcoreapp3.1\RegexDemo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\RegexDemo\RegexDemo\obj\Debug\netcoreapp3.1\RegexDemo.csproj.CopyComplete

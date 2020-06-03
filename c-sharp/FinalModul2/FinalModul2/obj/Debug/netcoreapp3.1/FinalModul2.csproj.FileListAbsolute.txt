@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\obj\Debug\netcoreapp3.1\FinalModul2.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\obj\Debug\netcoreapp3.1\FinalModul2.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\obj\Debug\netcoreapp3.1\FinalModul2.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\obj\Debug\netcoreapp3.1\FinalModul2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\bin\Debug\netcoreapp3.1\FinalModul2.exe
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\bin\Debug\netcoreapp3.1\FinalModul2.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\bin\Debug\netcoreapp3.1\FinalModul2.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\bin\Debug\netcoreapp3.1\FinalModul2.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\bin\Debug\netcoreapp3.1\FinalModul2.dll
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\bin\Debug\netcoreapp3.1\FinalModul2.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\obj\Debug\netcoreapp3.1\FinalModul2.dll
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\obj\Debug\netcoreapp3.1\FinalModul2.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\FinalModul2\FinalModul2\obj\Debug\netcoreapp3.1\FinalModul2.genruntimeconfig.cache

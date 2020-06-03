@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "40leSPRpdRUoV1DRHDTPMAx0Jm2+SXrWMxgcGomKWXVXfzAYGqadUtRCAd+taqDgoMuyVu56G7LB5HfCkWofDA==",
+  "dgSpecHash": "Fb4Q+BkdyOZLWxGqhrYTtq8P09O1UntGmlkwvUXOMsSsDcN+COBkKgxdNz4gR2ViUEM0p3YrrwwYzfoUAv3khA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Documents\\project\\project\\c-sharp\\ExamModule2\\ExamModule2\\Bai1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
