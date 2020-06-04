@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Text;
 
-namespace RegexDemo
+namespace Cau2
 {
     static class Constants
     {
@@ -28,6 +27,6 @@ namespace RegexDemo
         public const string ERROR_UNFORMAT_ID = "NUMBER not STRING!";
         public const string ERROR_UNFORMAT_AMOUNT = "AMOUNT is a NUMBER not STRING!";
         public const string ERROR_NOT_ENOUGH_BALANCE = "BALANCE is NOT ENOUGH!";
-        public const string ERROR_ACCOUNT_NOT_EXIST = "ACCOUNT IS NOT EXIST!";
+        public const string ERROR_ACCOUNT_NOT_EXIST = "NOT EXIST!";
     }
 }
