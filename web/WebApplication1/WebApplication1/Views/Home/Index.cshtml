@@ -1,0 +1,15 @@
+﻿@{
+    //var employee = ViewData["employee"] as IEnumerable<WebApplication1.Models.Employee>;
+    var employee = ViewBag.Employess as IEnumerable<Employee>;
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+    ViewBag.Title = "EmployeeList";
+ }
+@foreach(var emp in employee)
+{
+    <div>
+        <h3>@emp.fullName </h3>
+        <img src="@Url.Content(emp.avatarPath)" width="80" alt="Alternate Text" />
+        <h4>@emp.department</h4>
+    </div>
+    <a href="Home/Details/1">View</a>
+}
