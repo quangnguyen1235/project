@@ -1,0 +1,9 @@
+﻿.btn {
+    width: 90px;
+    height: 40px;
+    margin: 2px 0px;
+}
+.field-validation-error{
+    color:red;
+    font-weight: bold;
+}

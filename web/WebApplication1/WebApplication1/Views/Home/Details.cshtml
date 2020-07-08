@@ -1,7 +1,9 @@
-﻿@{ 
+﻿@model WebApplication1.ViewModels.HomeDetailViewModel;
+
+@{ 
     //Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Employee Detail";
-    var employee = ViewBag.Employee as Employee;
+    //var employee = ViewBag.Employee as Employee;
 }
     <h1>@ViewBag.Title</h1>
-    <img src="@Url.Content(employee.avatarPath)" alt="Alternate Text" />
+    <img src="@Url.Content(Model.employee.avatarPath)" alt="Alternate Text" />

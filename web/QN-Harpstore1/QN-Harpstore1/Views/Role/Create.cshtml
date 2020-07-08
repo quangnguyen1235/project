@@ -1,0 +1,29 @@
+﻿@model CreateRoleViewModel;
+@{
+    ViewBag.Title = "Create Role";
+}
+<form enctype="multipart/form-data" asp-controller="Role" asp-action="Create" method="post" class="my-4">
+    <div class="card">
+        <div class="card-header" style="background-color: #FED770">
+            <h1>@ViewBag.Title</h1>
+        </div>
+        <div class="card-body">
+            <div class="form">
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label asp-for="RoleName"></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input asp-for="RoleName" class="form-control" />
+                        <span asp-validation-for="RoleName"></span>
+                    </div>
+                </div>
+            </div>
+            <div asp-validation-summary="All" class="row form-group text-danger"></div>
+            <div class="card-footer bg-light">
+                <button type="submit" class="btn btn-primary" onclick="save">Create</button>
+                <a asp-controller="Role" asp-action="Index" class="btn btn-warning mx-2">Back</a>
+            </div>
+        </div>
+    </div>
+</form>

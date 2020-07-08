@@ -1,0 +1,23 @@
+﻿@model HomeDetailViewModels;
+@{
+    ViewBag.title = Model.titleName;
+    var avaPath = $"/images/{(Model.myProperty.ava ?? "unknownPerson.jpg")}";
+}
+
+<div class="container text-center col-6">
+    <div class="card my-4">
+        <div class="card-header bg-secondary">
+            <h3 class="card-title">@Model.myProperty.fullName</h3>
+        </div>
+        <div class="card card-body">
+            <img src="@avaPath" class="card-img rounded-circle" alt="@Model.myProperty.fullName" />
+            <br class="card-text">Email: @Model.myProperty.email
+            <br class="card-text">Departement: @Model.myProperty.departerment
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Back</a>
+            <a asp-controller="Home" asp-action="Edit" asp-route-id="@Model.myProperty.Id" class="btn btn-warning">Edit</a>
+            <a asp-controller="Home" asp-action="Remove" asp-route-id="@Model.myProperty.Id"onclick="return confirm('Are you sure to remove this employee: @Model.myProperty.fullName ')" class="btn btn-danger">Remove</a>
+        </div>
+    </div>
+</div>

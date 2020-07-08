@@ -1,0 +1,28 @@
+﻿
+@{
+    @model IEnumerable<Employee>;
+    ViewBag.title = "Employee List";
+}
+
+<div class="row my-2">
+    @foreach (var emp in Model)
+    {
+        var avaPath = $"/images/{(emp.ava ?? "unknownPerson.jpg")}";
+        <div class="col-4 my-2 text-center">
+            <div class="card">
+                <div class="card card-header bg-secondary">
+                    <h4 class="card-title">@emp.fullName</h4>
+                </div>
+                <div class="card card-body">
+                    <img src="@avaPath" class="card-img rounded-circle" asp-append-version="true" style="height:325px " alt="Alternate Text" />
+                    <p class="card-text">@emp.email</p>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@emp.Id" class="btn btn-primary">Details</a>
+                    <a asp-controller="Home" asp-action="Edit" asp-route-id="@emp.Id" class="btn btn-warning">Edit</a>
+                    @*<a asp-controller="Home" asp-action="Details" asp-route-id="@emp.Id" class="btn btn-danger">Remove</a>*@
+                </div>
+            </div>
+        </div>
+    }
+</div>

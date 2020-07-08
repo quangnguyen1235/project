@@ -28,16 +28,22 @@ namespace WebApplication1
                 app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
-            app.UseRouting();
+            //app.UseMvcWithDefaultRoute();
 
-            app.UseEndpoints(endpoints =>
+            //app.UseRouting();
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapGet("/", async context =>
+            //    {
+            //        await context.Response.WriteAsync("Hello World!");
+            //    });
+            //});
+            app.UseMvc(routers =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                routers.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
+            //app.UseMvc();
         }
     }
 }
