@@ -8,5 +8,6 @@ namespace QN_Harpstore1.Models
     public interface IProducerRepository
     {
         IEnumerable<Producer> Gets();
+        Producer Get(int id);
     }
 }

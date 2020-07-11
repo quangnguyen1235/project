@@ -13,6 +13,12 @@ namespace QN_Harpstore1.Models
         {
             this.dbContext = dbContext;
         }
+        public Producer Get(int id)
+        {
+            var data = dbContext.Producers.Find(id);
+            return data;
+        }
+
         public IEnumerable<Producer> Gets()
         {
             return dbContext.Producers;

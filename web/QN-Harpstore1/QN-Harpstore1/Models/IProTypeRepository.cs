@@ -8,5 +8,6 @@ namespace QN_Harpstore1.Models
     public interface IProTypeRepository
     {
         IEnumerable<Protype> Gets();
+        Protype Get(int id);
     }
 }

@@ -9,6 +9,9 @@ namespace QN_Harpstore1.Models
     public interface IProductRepository
     {
         IEnumerable<Product> Gets();
+        IEnumerable<Product> GetsToProducer(int? id);
+        IEnumerable<Product> GetsToProType(int? id);
+
         ProductDetailViewModel Get(string id);
         Product Create(Product product);
         Product Edit(Product product);

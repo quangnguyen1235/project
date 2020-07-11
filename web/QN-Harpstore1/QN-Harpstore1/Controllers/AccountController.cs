@@ -64,14 +64,14 @@ namespace QN_Harpstore1.Controllers
                 var result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await signInManager.SignInAsync(user, isPersistent:false);
+                    await signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction(actionName: "Index", controllerName: "Home");
                 }
                 else
                 {
-                    foreach(var error in result.Errors)
+                    foreach (var error in result.Errors)
                     {
-                        ModelState.AddModelError("",error.Description);
+                        ModelState.AddModelError("", error.Description);
                     }
                 }
             }

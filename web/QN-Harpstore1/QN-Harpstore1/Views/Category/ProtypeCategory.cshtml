@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Product>;
+@{
+    ViewBag.title = ViewBag.ProtypeCategory.ProductTypeName;
+}
+<hr />
+@if (Model.Any<Product>())
+{
+    <div class="card-header" style="background-color:azure"><h4 style="color:#076A67"> @ViewBag.ProtypeCategory.ProductTypeName </h4></div>
+    <div class="col container-fluid">
+        <div class="row my-2">
+            @foreach (var emp in Model)
+            {
+                var avaPath = $"/images/{(@emp.ProductAvatar)}";
+                //var avaPath = $"/images/{(emp.ava ?? "unknownPerson.jpg")}";
+
+                <div class="col-4 text-center my-2">
+                    <div class="card">
+                        <div class="card card-header text-dark" style="background-color: #FED770">
+                            <h6 class="card-title" style="color:#076A67">@emp.ProductName</h6>
+                        </div>
+                        <div class="card card-body">
+                            <img src="@avaPath" class="card-img rounded" asp-append-version="true" style="height:325px " alt="Alternate Text" />
+                            @*<p class="card-text">@emp.ShortDescription</p>*@
+                        </div>
+                        <div class="card-footer">
+                            <a asp-controller="Home" asp-action="Details" asp-route-id="@emp.ProductId" class="btn btn-primary">Details</a>
+                            <a @*asp-controller="Home" asp-action="Edit" asp-route-id="@emp.Id"*@ style="width:auto" class="btn btn-warning">Add To Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                            @*<a asp-controller="Home" asp-action="Details" asp-route-id="@emp.Id" class="btn btn-danger">Remove</a>*@
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <div class="card-header" style="background-color:azure"><h4 style="color:#076A67"> @ViewBag.ProtypeCategory.ProductTypeName </h4></div>
+    <div class="card-header" style="background-color:azure"><h6 style="color:#076A67"> No products in this category </h6></div>
+}

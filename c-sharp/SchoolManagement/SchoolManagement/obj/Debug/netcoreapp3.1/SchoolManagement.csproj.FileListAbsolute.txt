@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\bin\Debug\netcoreapp3.1\SchoolManagement.exe
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\bin\Debug\netcoreapp3.1\SchoolManagement.deps.json
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\bin\Debug\netcoreapp3.1\SchoolManagement.runtimeconfig.json
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\bin\Debug\netcoreapp3.1\SchoolManagement.runtimeconfig.dev.json
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\bin\Debug\netcoreapp3.1\SchoolManagement.dll
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\bin\Debug\netcoreapp3.1\SchoolManagement.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\obj\Debug\netcoreapp3.1\SchoolManagement.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\obj\Debug\netcoreapp3.1\SchoolManagement.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\obj\Debug\netcoreapp3.1\SchoolManagement.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\obj\Debug\netcoreapp3.1\SchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\obj\Debug\netcoreapp3.1\SchoolManagement.dll
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\obj\Debug\netcoreapp3.1\SchoolManagement.pdb
+C:\Users\Admin\Documents\project\project\c-sharp\SchoolManagement\SchoolManagement\obj\Debug\netcoreapp3.1\SchoolManagement.genruntimeconfig.cache

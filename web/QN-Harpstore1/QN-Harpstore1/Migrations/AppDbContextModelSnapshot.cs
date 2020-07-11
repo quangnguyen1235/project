@@ -221,6 +221,92 @@ namespace QN_Harpstore1.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("QN_Harpstore1.Models.Customer", b =>
+                {
+                    b.Property<string>("CustomerId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CustomerAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerPhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OrderId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CustomerId");
+
+                    b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("QN_Harpstore1.Models.Order", b =>
+                {
+                    b.Property<string>("OrderId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CustomerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("DeliveryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderDetailId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("OrderTotalMoney")
+                        .HasColumnType("real");
+
+                    b.HasKey("OrderId");
+
+                    b.HasIndex("CustomerId")
+                        .IsUnique();
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("QN_Harpstore1.Models.OrderDetail", b =>
+                {
+                    b.Property<string>("OrderDetailId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<float>("OrderDetailMoney")
+                        .HasColumnType("real");
+
+                    b.Property<int>("OrderDetailQlt")
+                        .HasColumnType("int");
+
+                    b.Property<string>("OrderId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("OrderDetailId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderDetails");
+                });
+
             modelBuilder.Entity("QN_Harpstore1.Models.Producer", b =>
                 {
                     b.Property<int>("ProducerId")
@@ -335,6 +421,30 @@ namespace QN_Harpstore1.Migrations
                     b.HasOne("QN_Harpstore1.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("QN_Harpstore1.Models.Order", b =>
+                {
+                    b.HasOne("QN_Harpstore1.Models.Customer", "OrderCustomer")
+                        .WithOne("CustomerOrder")
+                        .HasForeignKey("QN_Harpstore1.Models.Order", "CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("QN_Harpstore1.Models.OrderDetail", b =>
+                {
+                    b.HasOne("QN_Harpstore1.Models.Order", "OrderDetailOrder")
+                        .WithMany("ListOrderDetails")
+                        .HasForeignKey("OrderDetailId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("QN_Harpstore1.Models.Product", "OrderDetailProduct")
+                        .WithMany("ProductOrderDetails")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

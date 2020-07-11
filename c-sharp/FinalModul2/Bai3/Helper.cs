@@ -9,22 +9,6 @@ namespace FinalModul2
     {
         public static string InputField(string disPlayMesage, Regex regex, string error)
         {
-            //Console.Write(disPlayMesage);
-            //try
-            //{
-            //    string result = Console.ReadLine();
-            //    Match format = regex.Match(result);
-            //    if (!format.Success)
-            //    {
-            //        throw new Exception(error);
-            //    }
-            //    return result;
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //}
-            //return null;
             string result = "";
             Match format;
             do

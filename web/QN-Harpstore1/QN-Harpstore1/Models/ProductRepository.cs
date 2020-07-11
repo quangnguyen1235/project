@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using QN_Harpstore1.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -67,7 +68,63 @@ namespace QN_Harpstore1.Models
 
         public IEnumerable<Product> Gets()
         {
-            return context.Products;
+            var data = (from product in context.Products
+                        join protype in context.Protypes
+                        on product.ProductTypeId equals protype.ProTypeId
+                        join producer in context.Producers
+                        on product.ProducerId equals producer.ProducerId
+                        select new Product
+                        {
+                            ProductId = product.ProductId,
+                            ProductAvatar = product.ProductAvatar,
+                            ProducerId = producer.ProducerId,
+                            ProductProducer = producer,
+                            ProductTypeId = protype.ProTypeId,
+                            ProductType = protype,
+                            ProductName = product.ProductName,
+                            ProductPrice = product.ProductPrice,
+                            FullDescription = product.FullDescription,
+                            ShortDescription = product.ShortDescription,
+                        }
+                        );
+            return data;
+        }
+
+        public IEnumerable<Product> GetsToProducer(int? id)
+        {
+
+            var data = (from p in context.Products
+                        where p.ProducerId == id
+                        select p);
+                        //select new Product
+                        //{
+                        //    ProductId = p.ProductId,
+                        //    ProductAvatar = p.ProductAvatar,
+                        //    ProductName = p.ProductName,
+                        //    ProductPrice = p.ProductPrice,
+                        //    ProducerId = p.ProducerId,
+                        //    ProductTypeId = p.ProductTypeId,
+                        //    FullDescription = p.FullDescription
+                        //});
+            return data;
+        }
+
+        public IEnumerable<Product> GetsToProType(int? id)
+        {
+            var data = (from p in context.Products
+                        where p.ProductTypeId == id
+                        select p);
+                        //select new Product
+                        //{
+                        //    ProductId = p.ProductId,
+                        //    ProductAvatar = p.ProductAvatar,
+                        //    ProductName = p.ProductName,
+                        //    ProductPrice = p.ProductPrice,
+                        //    ProducerId = p.ProducerId,
+                        //    ProductTypeId = p.ProductTypeId,
+                        //    FullDescription = p.FullDescription
+                        //});
+            return data;
         }
     }
 }

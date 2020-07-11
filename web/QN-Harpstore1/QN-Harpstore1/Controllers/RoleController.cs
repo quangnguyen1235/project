@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using QN_Harpstore1.Models;
 using QN_Harpstore1.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -16,17 +18,25 @@ namespace QN_Harpstore1.Controllers
         {
             this.roleManager = roleManager;
         }
+        [Authorize]
         public IActionResult Index()
         {
             var role = roleManager.Roles;
-            return View(role);
+            var model = new List<Role>();
+            model = role.Select(r => new Role
+            {
+                RoleId = r.Id,
+                RoleName = r.Name
+            }).ToList();
+            return View(model);
         }
+        [Authorize]
         [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
-        [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Create(CreateRoleViewModel model)
         {
             if (ModelState.IsValid)
@@ -46,6 +56,7 @@ namespace QN_Harpstore1.Controllers
             }
             return View();
         }
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
@@ -64,6 +75,23 @@ namespace QN_Harpstore1.Controllers
         [HttpPost]
         public IActionResult Edit(EditRoleViewModel model)
         {
+            return View();
+        }
+        public async Task<IActionResult> Remove(string id)
+        {
+            var delRole = await roleManager.FindByIdAsync(id);
+            if (delRole != null)
+            {
+                var result = await roleManager.DeleteAsync(delRole);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Role");
+                }
+                foreach (var roleError in result.Errors)
+                {
+                    ModelState.AddModelError("", roleError.Description);
+                }
+            }
             return View();
         }
     }

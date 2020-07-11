@@ -71,10 +71,7 @@ namespace Bai3
                 for (int i = 0; i < newAccount.RateList.Length; i++)
                 {
                     arr[i] = Helper.InputField($"Input Rate {i}: ", MyRegex.number, Constaints.ERROR_UNFORMAT_ID);
-                    if(arr[i]!= null)
-                    {
-                        newAccount.RateList[i] = float.Parse(arr[i]);
-                    }
+                    newAccount.RateList[i] = float.Parse(arr[i]);
                 }
                 PostList.Add(newAccount);
             }
@@ -97,16 +94,5 @@ namespace Bai3
                 item.Display();
             }
         }
-        //private Account Check(int id)
-        //{
-        //    foreach (var item in listAcount.Values)
-        //    {
-        //        if (item.id == id)
-        //        {
-        //            return item;
-        //        }
-        //    }
-        //    return null;
-        //}
     }
 }

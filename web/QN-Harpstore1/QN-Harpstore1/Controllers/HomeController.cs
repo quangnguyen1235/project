@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using QN_Harpstore1.Models;
 using QN_Harpstore1.ViewModels;
@@ -24,6 +25,7 @@ namespace QN_Harpstore1.Controllers
             this.producerRepository = producerRepository;
             this.protypeRepository = protypeRepository;
         }
+        [Authorize]
         public ViewResult Management()
         {
             IEnumerable<Product> products = productRepository.Gets();
@@ -44,6 +46,7 @@ namespace QN_Harpstore1.Controllers
             };
             return View(detailViewModel);
         }
+        [Authorize]
         [HttpGet]
         public IActionResult Create()
         {
@@ -78,11 +81,13 @@ namespace QN_Harpstore1.Controllers
                     }
                     product.ProductAvatar = fileName;
                     var newProduct = productRepository.Create(product);
-                    return RedirectToAction("Details", new { id = newProduct.ProductId });
+                    //return RedirectToAction("Details", new { id = newProduct.ProductId });
+                    return RedirectToAction("Management");
                 }
             }
             return View();
         }
+        [Authorize]
         [HttpGet]
         public IActionResult Edit(string id)
         {
@@ -140,7 +145,8 @@ namespace QN_Harpstore1.Controllers
                 var editProduct = productRepository.Edit(product);
                 if (editProduct != null)
                 {
-                    return RedirectToAction("Details", new { id = editProduct.ProductId });
+                    return RedirectToAction("Management");
+                    //return RedirectToAction("Details", new { id = editProduct.ProductId });
                 }
             }
             return View();
@@ -164,5 +170,6 @@ namespace QN_Harpstore1.Controllers
         {
             return producerRepository.Gets().ToList();
         }
+        
     }
 }

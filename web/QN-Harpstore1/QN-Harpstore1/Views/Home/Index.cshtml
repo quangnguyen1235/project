@@ -1,9 +1,10 @@
-﻿@{
-    @model IEnumerable<Product>;
+﻿@model IEnumerable<Product>;
+@{
+
     ViewBag.title = "Product List";
 }
 <hr />
-<div class="card-header" style="background-color:azure"><h4 style="color:#076A67"></h4></div>
+<div class="card-header" style="background-color:azure"><h4 style="color:#076A67">Top Rates</h4></div>
 <div class="col container-fluid">
     <div class="row my-2">
         @foreach (var emp in Model)
@@ -14,7 +15,7 @@
             <div class="col-4 text-center my-2">
                 <div class="card">
                     <div class="card card-header text-dark" style="background-color: #FED770">
-                        <h6 class="card-title">@emp.ProductName</h6>
+                        <h6 class="card-title" style="color:#076A67">@emp.ProductName</h6>
                     </div>
                     <div class="card card-body">
                         <img src="@avaPath" class="card-img rounded" asp-append-version="true" style="height:325px " alt="Alternate Text" />

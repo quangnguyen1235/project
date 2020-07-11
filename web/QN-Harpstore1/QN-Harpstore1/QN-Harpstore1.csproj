@@ -10,6 +10,8 @@
     <Compile Remove="Migrations\20200707021001_CreateTable.Designer.cs" />
     <Compile Remove="Migrations\20200707085443_CreateIndentityTable.cs" />
     <Compile Remove="Migrations\20200707085443_CreateIndentityTable.Designer.cs" />
+    <Compile Remove="Migrations\20200709023338_AddOderOrderDetailCustomer.cs" />
+    <Compile Remove="Migrations\20200709023338_AddOderOrderDetailCustomer.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

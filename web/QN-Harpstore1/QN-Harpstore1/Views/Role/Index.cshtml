@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Role Management";
 }
-@model IEnumerable<IdentityRole>;
+@model IEnumerable<Role>;
 <div class="container">
     <h4 class="mx-2">@ViewBag.Title</h4>
     <a class="btn btn-success mx-2" asp-controller="Role" asp-action="Create">Create</a>
@@ -16,17 +16,40 @@
         </thead>
         <tbody>
             @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.Id</td>
-                       
-                        <td>@item.Name</td>
-                        <td class="text-right">
-                            <a title="edit product" asp-controller="Role" asp-action="Edit" asp-route-id="@item.Id"><i class='fa fa-edit'></i></a>
-                            <a title="remove product" asp-controller="Role" asp-action="Remove" asp-route-id="@item.Id"><i class='fa fa-trash'></i></a>
-                        </td>
-                    </tr>
-                }
+            {
+
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: #076A67">
+                                <h4 class="modal-title text-light">Confirm this action</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure to remove this role ?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-danger" title="remove product" asp-controller="Role" asp-action="Remove" asp-route-id="@item.RoleId">Remove</a>
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <tr>
+                    <td><div class="mb-3 mt-2">@item.RoleId</div></td>
+
+                    <td><div class="mb-3 mt-2">@item.RoleName</div></td>
+                    <td class="text-right">
+                        <a title="edit product" asp-controller="Role" asp-action="Edit" asp-route-id="@item.RoleId"><i class='fa fa-edit'></i></a>
+                        <button type="button" class="btn btn-link mb-4 mt-1" style="width:auto; height:25px" title="remove product" data-toggle="modal" data-target="#myModal"><i class='fa fa-trash'></i></button>
+                        @*<a title="remove product" asp-controller="Role" asp-action="Remove" asp-route-id="@item.RoleId"><i class='fa fa-trash'></i></a>*@
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>
