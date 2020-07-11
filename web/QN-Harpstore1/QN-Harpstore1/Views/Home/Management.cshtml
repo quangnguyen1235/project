@@ -21,18 +21,38 @@
             <tbody>
                 @foreach (var product in Model)
                 {
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #076A67">
+                                    <h4 class="modal-title text-light">Confirm this action</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure to remove this product ?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-danger" title="remove product" asp-controller="Home" asp-action="Remove" asp-route-id="@product.ProductId">Remove</a>
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     var avaPath = $"/images/{(product.ProductAvatar)}";
-                <tr>
-                    <td>@product.ProductName</td>
-                    <td>@product.ProductProducer.ProducerName</td>
-                    <td>@product.ProductType.ProductTypeName</td>
-                    <td><img src="@avaPath" alt="@product.ProductName" style="width:50px; height:50px" /></td>
-                    <td class="text-right">@product.ProductPrice.ToString("N0")₫</td>
-                    <td class="text-right">
-                        <a title="edit product" asp-controller="Home" asp-action="Edit" asp-route-id="@product.ProductId"><i class='fa fa-edit'></i></a>
-                        <a title="remove product" asp-controller="Home" asp-action="Remove" asp-route-id="@product.ProductId"><i class='fa fa-trash'></i></a>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>@product.ProductName</td>
+                        <td>@product.ProductProducer.ProducerName</td>
+                        <td>@product.ProductType.ProductTypeName</td>
+                        <td><img src="@avaPath" alt="@product.ProductName" style="width:50px; height:50px" /></td>
+                        <td class="text-right">@product.ProductPrice.ToString("N0")₫</td>
+                        <td class="text-right">
+                            <a title="edit product" asp-controller="Home" asp-action="Edit" asp-route-id="@product.ProductId"><i class='fa fa-edit'></i></a>
+                            <a title="remove product" class="text-danger" data-toggle="modal" data-target="#myModal"><i class='fa fa-trash'></i></a>
+                            
+                        </td>
+                    </tr>
                 }
             </tbody>
         </table>

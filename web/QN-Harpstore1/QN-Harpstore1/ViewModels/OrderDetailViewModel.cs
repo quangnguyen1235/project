@@ -8,5 +8,10 @@ namespace QN_Harpstore1.ViewModels
 {
     public class OrderDetailViewModel : OrderDetail
     {
+        public ProductDetailViewModel Product { get; set; }
+        public float CalculateMoney()
+        {
+            return OrderDetailMoney = Product.ProductPrice * OrderDetailQlt;
+        }
     }
 }

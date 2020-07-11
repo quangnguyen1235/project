@@ -13,6 +13,7 @@ namespace QN_Harpstore1.Models
         IEnumerable<Product> GetsToProType(int? id);
 
         ProductDetailViewModel Get(string id);
+        Product GetToOrderDetail(string id);
         Product Create(Product product);
         Product Edit(Product product);
         bool Delete(string id);

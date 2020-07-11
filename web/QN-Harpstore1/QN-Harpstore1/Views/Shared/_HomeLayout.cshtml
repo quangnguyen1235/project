@@ -61,24 +61,18 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto">
-                            @if (isLogin)
-                            {
-                                <li class="nav-item">
-                                    <a href="" class="text-black-50" style="width:auto; height: auto"><h5 style="color:#076A67">View Cart <i class="fa fa-shopping-cart" aria-hidden="true" style=""></i></h5> </a>
-                                </li>
-                            }
-                            else
+                            @if (!isLogin)
                             {
                                 <li class="nav-item">
                                     <a asp-controller="Account" asp-action="Login" class="text-black-50" style="width:auto; height: auto"><h5 style="color:#076A67">Login</h5></a>
                                 </li>
                                 <li class="nav-item mx-2">
-                                    <h5 style="color:#076A67" >|</h5>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="text-black-50" style="width:auto; height: auto"><h5 style="color:#076A67" >View Cart <i class="fa fa-shopping-cart" aria-hidden="true" style=""></i></h5> </a>
+                                    <h5 style="color:#076A67">|</h5>
                                 </li>
                             }
+                            <li class="nav-item">
+                                <a asp-controller="Order" asp-action="Index" class="text-black-50" style="width:auto; height: auto"><h5 style="color:#076A67">View Cart <i class="fa fa-shopping-cart" aria-hidden="true" style=""></i></h5> </a>
+                            </li>
                         </ul>
                     </nav>
                     <nav class="navbar navbar-expand-sm navbar-dark" style="height: 40px; background-color:#076A67">

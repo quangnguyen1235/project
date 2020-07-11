@@ -1,4 +1,57 @@
-﻿@model OrderDetailViewModel;
-@{ 
+﻿@model List<OrderDetail>;
+@{
     ViewBag.Title = "Your Cart";
 }
+<hr />
+<div class="my-4">
+    @if (Model.Any())
+    {
+        <div class="card">
+            <div class="card-header" style="background-color:#FED770">
+                <h3 class="card-title" style="color:#076A67">
+                    Your Cart
+                </h3>
+            </div>
+
+            <div class="card-body">
+                <table class="table table-image" id="tbCart">
+                    <thead class=" text-light" style="background-color:#076A67">
+                        <tr>
+                            <th></th>
+                            <th>Product</th>
+                            <th class="text-right">Price</th>
+                            <th class="text-right">Number</th>
+                            <th class="text-right">Money</th>
+                            <th class="text-right">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            var avaPath = $"/images/{(@item.Product.ProductAvatar)}";
+                            <tr>
+                                <td><img src="@avaPath" class="card-img rounded" asp-append-version="true" style="height:75px; width:75px " alt="Alternate Text" /></td>
+                                <td><h5>@item.Product.ProductName</h5></td>
+                                <td class="text-right"><h5>@item.Product.ProductPrice</h5></td>
+                                <td class="text-right"><h5>@item.OrderDetailQlt</h5></td>
+                                <td class="text-right"><h5>@item.OrderDetailMoney</h5></td>
+                                <td class="text-right"><a class="text-danger" href='javascript:void(0);' title='remove item'><i class="fa fa-ban" aria-hidden="true"></i></a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-end" style="color:#076A67">
+                    <h5>Total: <span class="price text-success" id="totalMoney"></span></h5>
+                </div>
+            </div>
+            <div class="card-footer border-top-0 d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary mr-2" style="width:100px" data-dismiss="modal">Back</button>
+                <button type="button" class="btn btn-success" style="width:100px" id="checkOut" onclick="customer.openModal()" data-dismiss="modal">Checkout</button>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="card-header" style="background-color:azure"><h1 style="color:#076A67"> No products in your card </h1></div>
+    }
+</div>

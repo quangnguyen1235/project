@@ -126,5 +126,10 @@ namespace QN_Harpstore1.Models
                         //});
             return data;
         }
+
+        public Product GetToOrderDetail(string id)
+        {
+            return context.Products.Find(id);
+        }
     }
 }

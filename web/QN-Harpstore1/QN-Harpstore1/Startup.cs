@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using QN_Harpstore1.Models;
+using QN_Harpstore1.ViewModels;
 
 namespace QN_Harpstore1
 {
@@ -31,6 +32,8 @@ namespace QN_Harpstore1
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProducerRepository, ProducerRepositoty>();
             services.AddScoped<IProTypeRepository, ProTypeRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddSingleton<IOrderDetailRepository, OrderDetailRepository>();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("HarpstoreDatabaseConnection1")));
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
         }

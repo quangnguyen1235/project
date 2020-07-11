@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Product>;
 @{
 
-    ViewBag.title = "Product List";
+    ViewBag.title = "QN-Harpstore";
 }
 <hr />
 <div class="card-header" style="background-color:azure"><h4 style="color:#076A67">Top Rates</h4></div>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="card-footer">
                         <a asp-controller="Home" asp-action="Details" asp-route-id="@emp.ProductId" class="btn btn-primary">Details</a>
-                        <a @*asp-controller="Home" asp-action="Edit" asp-route-id="@emp.Id"*@ style="width:auto" class="btn btn-warning">Add To Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        <a asp-controller="Order" asp-action="AddToCart" asp-route-id="@emp.ProductId" style="width:auto" class="btn btn-warning">Add To Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                         @*<a asp-controller="Home" asp-action="Details" asp-route-id="@emp.Id" class="btn btn-danger">Remove</a>*@
                     </div>
                 </div>

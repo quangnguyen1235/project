@@ -7,6 +7,7 @@ namespace QN_Harpstore1.Models
 {
     public interface IOrderDetailRepository
     {
+        IEnumerable<OrderDetail> GetAll();
         IEnumerable<OrderDetail> Gets(string orderId);
         OrderDetail Get(string id);
         bool Delete(string id);

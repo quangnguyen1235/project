@@ -11,6 +11,7 @@ namespace QN_Harpstore1.Models
         public string OrderDetailId { get; set; }
         [Required]
         public string ProductId { get; set; }
+        public Product Product { get; set; }
         public Product OrderDetailProduct { get; set; }
         [Required]
         public float OrderDetailMoney { get; set; }
@@ -19,5 +20,9 @@ namespace QN_Harpstore1.Models
         [Required]
         public string OrderId { get; set; }
         public Order OrderDetailOrder { get; set; }
+        public float Calculate()
+        {
+            return OrderDetailMoney = Product.ProductPrice * OrderDetailQlt;
+        }
     }
 }
