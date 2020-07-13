@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Admin\Desktop\publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="HarpstoreDatabaseConnection1">
+      <Value>workstation id=qnharpstore.mssql.somee.com%3bpacket size=4096%3buser id=quangnguyencg_SQLLogin_1%3bpwd=4fqw3ymhau%3bdata source=qnharpstore.mssql.somee.com%3bpersist security info=False%3binitial catalog=qnharpstore</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="QN_Harpstore1.Models.AppDbContext">
+      <Value>workstation id=qnharpstore.mssql.somee.com%3bpacket size=4096%3buser id=quangnguyencg_SQLLogin_1%3bpwd=4fqw3ymhau%3bdata source=qnharpstore.mssql.somee.com%3bpersist security info=False%3binitial catalog=qnharpstore</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

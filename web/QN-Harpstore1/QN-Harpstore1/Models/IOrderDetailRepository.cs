@@ -13,5 +13,7 @@ namespace QN_Harpstore1.Models
         bool Delete(string id);
         OrderDetail Create(OrderDetail orderDetail);
         OrderDetail Edit(OrderDetail orderDetail);
+        OrderDetail Check(string id);
+        void Save();
     }
 }

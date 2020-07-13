@@ -33,7 +33,7 @@ namespace QN_Harpstore1
             services.AddScoped<IProducerRepository, ProducerRepositoty>();
             services.AddScoped<IProTypeRepository, ProTypeRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
-            services.AddSingleton<IOrderDetailRepository, OrderDetailRepository>();
+            services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("HarpstoreDatabaseConnection1")));
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
         }
@@ -44,6 +44,12 @@ namespace QN_Harpstore1
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
             }
 
             app.UseStaticFiles();

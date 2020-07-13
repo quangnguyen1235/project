@@ -26,22 +26,32 @@ namespace QN_Harpstore1.Controllers
         }
         public IActionResult Index()
         {
-            var list =  orderDetailRepository.GetAll();
+            var list = orderDetailRepository.GetAll();
             return View(list);
         }
         public IActionResult AddToCart(string id) 
         {
             var product = productRepository.GetToOrderDetail(id);
-            var orderDetailView = new OrderDetail()
+            var check = orderDetailRepository.Get(id);
+            if (check != null)
             {
-                OrderDetailId = $"{Guid.NewGuid()}",
-                OrderDetailQlt = 1,
-                Product = product,
-                ProductId = id,
-            };
-            orderDetailView.Calculate();
-            orderDetailRepository.Create(orderDetailView);
+                var editOrderDetail = orderDetailRepository.Edit(check);
+
+            }
+            else
+            {
+                var orderDetailView = new OrderDetail()
+                {
+                    OrderDetailId = $"{Guid.NewGuid()}",
+                    OrderDetailQlt = 1,
+                    Product = product,
+                    ProductId = id,
+                };
+
+                orderDetailRepository.Create(orderDetailView);
+            }
             return RedirectToAction("Index");
         }
+
     }
 }

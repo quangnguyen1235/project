@@ -17,13 +17,15 @@ namespace QN_Harpstore1.Controllers
         private readonly IWebHostEnvironment webHostEnvironment;
         private readonly IProducerRepository producerRepository;
         private readonly IProTypeRepository protypeRepository;
+        private readonly IOrderDetailRepository orderDetailRepository;
 
-        public HomeController(IProductRepository productRepository, IWebHostEnvironment webHostEnvironment, IProducerRepository producerRepository, IProTypeRepository protypeRepository)
+        public HomeController(IProductRepository productRepository, IWebHostEnvironment webHostEnvironment, IProducerRepository producerRepository, IProTypeRepository protypeRepository, IOrderDetailRepository orderDetailRepository)
         {
             this.productRepository = productRepository;
             this.webHostEnvironment = webHostEnvironment;
             this.producerRepository = producerRepository;
             this.protypeRepository = protypeRepository;
+            this.orderDetailRepository = orderDetailRepository;
         }
         [Authorize]
         public ViewResult Management()
@@ -36,131 +38,173 @@ namespace QN_Harpstore1.Controllers
             IEnumerable<Product> products = productRepository.Gets();
             return View(products);
         }
-        public ViewResult Details(string id)
+        public ViewResult Details(string? id)
         {
-
-            var detailViewModel = new HomeDetailViewModel()
+            try
             {
-                product = productRepository.Get(id),
-                Title = "Product Details",
-            };
-            return View(detailViewModel);
+                var product = productRepository.Get(id);
+                var detailViewModel = new HomeDetailViewModel()
+                {
+                    product = productRepository.Get(id),
+                    Title = "Product Details",
+                };
+                return View(detailViewModel);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
         [Authorize]
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.ProductType = GetProductTypes();
-            ViewBag.Producer = GetProducers();
-            return View();
+            try
+            {
+                ViewBag.ProductType = GetProductTypes();
+                ViewBag.Producer = GetProducers();
+                return View();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
         [HttpPost]
         public IActionResult Create(HomeCreateViewModel model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var product = new Product
+                if (ModelState.IsValid)
                 {
-                    ProductName = model.ProductName,
-                    ProductTypeId = model.ProductTypeId,
-                    ProducerId = model.ProducerId,
-                    FullDescription = model.FullDescription,
-                    ShortDescription = model.ShortDescription,
-                    ProductPrice = model.ProductPrice,
-                    ProductId = $"{Guid.NewGuid()}"
-                };
-                var fileName = string.Empty;
-                if (model.Image != null)
-                {
-                    string uploadFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
-                    fileName = $"{product.ProductId}_{model.Image.FileName}";
-                    var filePath = Path.Combine(uploadFolder, fileName);
-                    using (var fs = new FileStream(filePath, FileMode.Create))
+                    var product = new Product
                     {
-                        model.Image.CopyTo(fs);
+                        ProductName = model.ProductName,
+                        ProductTypeId = model.ProductTypeId,
+                        ProducerId = model.ProducerId,
+                        FullDescription = model.FullDescription,
+                        ShortDescription = model.ShortDescription,
+                        ProductPrice = model.ProductPrice,
+                        ProductId = $"{Guid.NewGuid()}"
+                    };
+                    var fileName = string.Empty;
+                    if (model.Image != null)
+                    {
+                        string uploadFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                        fileName = $"{product.ProductId}_{model.Image.FileName}";
+                        var filePath = Path.Combine(uploadFolder, fileName);
+                        using (var fs = new FileStream(filePath, FileMode.Create))
+                        {
+                            model.Image.CopyTo(fs);
+                        }
+                        product.ProductAvatar = fileName;
+                        var newProduct = productRepository.Create(product);
+                        //return RedirectToAction("Details", new { id = newProduct.ProductId });
+                        return RedirectToAction("Management");
                     }
-                    product.ProductAvatar = fileName;
-                    var newProduct = productRepository.Create(product);
-                    //return RedirectToAction("Details", new { id = newProduct.ProductId });
-                    return RedirectToAction("Management");
                 }
+                return View();
             }
-            return View();
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
         [Authorize]
         [HttpGet]
         public IActionResult Edit(string id)
         {
-            ViewBag.ProductType = GetProductTypes();
-            ViewBag.Producer = GetProducers();
-            var product = productRepository.Get(id);
-            var editProduct = new HomeEditViewModel
+            try
             {
-                avaPath = product.ProductAvatar,
-                id = product.ProductId,
-                ProductName = product.ProductName,
-                ProductPrice = product.ProductPrice,
-                ProducerId = product.ProducerId,
-                ProductProducerName = product.ProductProducerName,
-                ProductTypeId = product.ProductTypeId,
-                ProductTypeName = product.ProductTypeName,
-                FullDescription = product.FullDescription,
-                ShortDescription = product.ShortDescription,
-            };
-            return View(editProduct);
+                ViewBag.ProductType = GetProductTypes();
+                ViewBag.Producer = GetProducers();
+                var product = productRepository.Get(id);
+                var editProduct = new HomeEditViewModel
+                {
+                    avaPath = product.ProductAvatar,
+                    id = product.ProductId,
+                    ProductName = product.ProductName,
+                    ProductPrice = product.ProductPrice,
+                    ProducerId = product.ProducerId,
+                    ProductProducerName = product.ProductProducerName,
+                    ProductTypeId = product.ProductTypeId,
+                    ProductTypeName = product.ProductTypeName,
+                    FullDescription = product.FullDescription,
+                    ShortDescription = product.ShortDescription,
+                };
+                return View(editProduct);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
         [HttpPost]
         public IActionResult Edit(HomeEditViewModel model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var product = new Product
+                if (ModelState.IsValid)
                 {
-                    ProductId = model.id,
-                    ProductAvatar = model.avaPath,
-                    ProducerId = model.ProducerId,
-                    ProductName = model.ProductName,
-                    ProductPrice = model.ProductPrice,
-                    ProductTypeId = model.ProductTypeId,
-                    FullDescription = model.FullDescription,
-                    ShortDescription = model.ShortDescription,
-                };
-                var fileName = string.Empty;
-                if (model.Image != null)
-                {
-                    string uploadFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
-                    fileName = $"{product.ProductId}_{model.Image.FileName}";
-                    var filePath = Path.Combine(uploadFolder, fileName);
-                    using (var fs = new FileStream(filePath, FileMode.Create))
+                    var product = new Product
                     {
-                        model.Image.CopyTo(fs);
+                        ProductId = model.id,
+                        ProductAvatar = model.avaPath,
+                        ProducerId = model.ProducerId,
+                        ProductName = model.ProductName,
+                        ProductPrice = model.ProductPrice,
+                        ProductTypeId = model.ProductTypeId,
+                        FullDescription = model.FullDescription,
+                        ShortDescription = model.ShortDescription,
+                    };
+                    var fileName = string.Empty;
+                    if (model.Image != null)
+                    {
+                        string uploadFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                        fileName = $"{product.ProductId}_{model.Image.FileName}";
+                        var filePath = Path.Combine(uploadFolder, fileName);
+                        using (var fs = new FileStream(filePath, FileMode.Create))
+                        {
+                            model.Image.CopyTo(fs);
+                        }
+                        product.ProductAvatar = fileName;
+                        if (!string.IsNullOrEmpty(model.avaPath))
+                        {
+                            string delFile = Path.Combine(webHostEnvironment.WebRootPath, "images", model.avaPath);
+                            System.IO.File.Delete(delFile);
+                        }
                     }
-                    product.ProductAvatar = fileName;
-                    if (!string.IsNullOrEmpty(model.avaPath))
+                    var editProduct = productRepository.Edit(product);
+                    if (editProduct != null)
                     {
-                        string delFile = Path.Combine(webHostEnvironment.WebRootPath, "images", model.avaPath);
-                        System.IO.File.Delete(delFile);
+                        return RedirectToAction("Management");
+                        //return RedirectToAction("Details", new { id = editProduct.ProductId });
                     }
                 }
-                var editProduct = productRepository.Edit(product);
-                if (editProduct != null)
-                {
-                    return RedirectToAction("Management");
-                    //return RedirectToAction("Details", new { id = editProduct.ProductId });
-                }
+                return View();
             }
-            return View();
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
         public IActionResult Remove(string id)
         {
-            var delProduct = productRepository.Get(id);
-            string dellFile = Path.Combine(webHostEnvironment.WebRootPath, "images", delProduct.ProductAvatar);
-            System.IO.File.Delete(dellFile);
-            if (productRepository.Delete(id))
+            try
             {
-                return RedirectToAction("Management");
+                var delProduct = productRepository.Get(id);
+                string dellFile = Path.Combine(webHostEnvironment.WebRootPath, "images", delProduct.ProductAvatar);
+                System.IO.File.Delete(dellFile);
+                if (productRepository.Delete(id))
+                {
+                    return RedirectToAction("Management");
+                }
+                return View();
             }
-            return View();
+            catch(Exception e)
+            {
+                throw e;
+            }
         }
         private List<Protype> GetProductTypes()
         {
@@ -170,6 +214,6 @@ namespace QN_Harpstore1.Controllers
         {
             return producerRepository.Gets().ToList();
         }
-        
+
     }
 }

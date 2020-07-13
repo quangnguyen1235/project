@@ -17,7 +17,7 @@ namespace QN_Harpstore1.Models
         public Order Create(Order order)
         {
             context.Orders.Add(order);
-            context.SaveChanges();
+     
             return order;
         }
 
@@ -27,7 +27,7 @@ namespace QN_Harpstore1.Models
             if (delOrder != null)
             {
                 context.Orders.Remove(delOrder);
-                return context.SaveChanges() > 0;
+                return true;
             }
             return false;
         }
@@ -36,7 +36,7 @@ namespace QN_Harpstore1.Models
         {
             var editOrder = context.Orders.Attach(order);
             editOrder.State = EntityState.Modified;
-            context.SaveChanges();
+
             return order;
         }
 
@@ -48,6 +48,11 @@ namespace QN_Harpstore1.Models
         public IEnumerable<Order> Gets()
         {
             return context.Orders;
+        }
+
+        public void Save()
+        {
+            context.SaveChanges();
         }
     }
 }

@@ -51,7 +51,7 @@ namespace EmployeeManagement.Models
 
         public Employee Get(int id)
         {
-            return employees.FirstOrDefault(e => e.Id == id);#if
+            return employees.FirstOrDefault(e => e.Id == id);
         }
 
         public IEnumerable<Employee> Gets()

@@ -20,9 +20,9 @@ namespace QN_Harpstore1.Models
         [Required]
         public string OrderId { get; set; }
         public Order OrderDetailOrder { get; set; }
-        public float Calculate()
-        {
-            return OrderDetailMoney = Product.ProductPrice * OrderDetailQlt;
-        }
+        //public float Calculate()
+        //{
+        //    return OrderDetailMoney = Product.ProductPrice * OrderDetailQlt;
+        //}
     }
 }

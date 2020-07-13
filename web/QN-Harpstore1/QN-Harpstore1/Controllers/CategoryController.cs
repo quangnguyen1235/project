@@ -35,15 +35,27 @@ namespace QN_Harpstore1.Controllers
         }
         public IActionResult ProducerCategory(int id)
         {
-            ViewBag.ProducerCategory = producerRepository.Get(id);
-            IEnumerable<Product> products = productRepository.GetsToProducer(id);
-            return View(products);
+            try
+            {
+                ViewBag.ProducerCategory = producerRepository.Get(id);
+                IEnumerable<Product> products = productRepository.GetsToProducer(id);
+                return View(products);
+            }catch(Exception e)
+            {
+                throw e;
+            }
         }
         public IActionResult ProTypeCategory(int id)
         {
-            ViewBag.ProtypeCategory = protypeRepository.Get(id);
-            IEnumerable<Product> products = productRepository.GetsToProType(id);
-            return View(products);
+            try
+            {
+                ViewBag.ProtypeCategory = protypeRepository.Get(id);
+                IEnumerable<Product> products = productRepository.GetsToProType(id);
+                return View(products);
+            }catch(Exception e)
+            {
+                throw e;
+            }
         }
         
     }
