@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.title = "Grade";
+}
+@model IEnumerable<Grade>;
+<div class="container">
+    <h4 class="mx-2">@ViewBag.title</h4>
+    <table class="table table-hover mt-3" id="tbProducts">
+        <thead class="thead-dark">
+            <tr>
+                <th>Grade Id</th>
+                <th>GradeName</th>
+                <th class="text-right">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var grade in Model)
+            {
+                <tr>
+                    <td>@grade.GradeId</td>
+                    <td>@grade.GradeName</td>
+                    <td class="text-right">
+                        <a title="Student In Grade" class="btn btn-link" asp-controller="Home" asp-action="StudentByGrade" asp-route-id="@grade.GradeId">List Student</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

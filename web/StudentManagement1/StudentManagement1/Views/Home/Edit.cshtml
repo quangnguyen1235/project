@@ -1,0 +1,81 @@
+﻿@model HomeEditViewModel
+@{
+    ViewBag.Title = "Edit Student";
+    var grade = ViewBag.Grade as List<Grade>;
+   
+}
+<form enctype="multipart/form-data" asp-controller="Home" asp-action="Edit" method="post" class="my-4">
+    <div class="card">
+        <div class="card-header" style="background-color: #FED770">
+            <h1 style="color:#076A67">@ViewBag.Title</h1>
+        </div>
+        <div class="card-body">
+            <div class="form">
+                <input type="hidden" asp-for="Id" value="@Model.Id" />
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label asp-for="StudentName"></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input asp-for="StudentName" class="form-control" />
+                        <span asp-validation-for="StudentName"></span>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label asp-for="StudentEmail"></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input asp-for="StudentEmail" class="form-control" />
+                        <span asp-validation-for="StudentEmail"></span>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label asp-for="StudentGender"></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="radio" value="@true" asp-for="StudentGender">
+                        <label class="mr-3">Female</label>
+                        <input type="radio" value="@false" asp-for="StudentGender">
+                        <label>Male</label>
+                        <div>
+                            <span asp-validation-for="StudentDob"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label asp-for="StudentDob"></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="date" asp-for="StudentDob" class="form-control" />
+                        <span asp-validation-for="StudentDob"></span>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label asp-for="GradeId"></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <select asp-for="GradeId" class="custom-select">
+                            <option value="">Select a department</option>
+                            @if (grade != null)
+                            {
+                                foreach (var item in grade)
+                                {
+                                    <option value="@item.GradeId" selected="@(item.GradeId == Model.GradeId)">@item.GradeName</option>
+                                }
+                            }
+                        </select>
+                        <span asp-validation-for="GradeId"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer bg-light">
+            <button type="submit" class="btn btn-primary" onclick="save">Edit</button>
+            <a asp-controller="Home" asp-action="StudentByGrade" asp-route-id="@Model.GradeId" class="btn btn-warning mx-2">Back</a>
+        </div>
+    </div>
+</form>

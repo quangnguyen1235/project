@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Student>;
+@{
+    ViewBag.title = ViewBag.Grade.GradeName;
+}
+<hr />
+<div class="container">
+    <h4 class="mx-2">@ViewBag.title</h4>
+    <a class="btn btn-success mx-2" asp-controller="Home" asp-action="Create" asp-route-id="@ViewBag.Grade.GradeId">Create</a>
+    <a class="btn btn-warning mx-2" asp-controller="Home" asp-action="Index">Back</a>
+    <table class="table table-hover mt-3" id="tbProducts">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Dob</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Grade</th>
+                <th class="text-right">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: #076A67">
+                                <h4 class="modal-title text-light">Confirm this action</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure to remove this student ?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-danger" title="remove product" asp-controller="Home" asp-action="Remove" asp-route-id="@student.StudentId">Remove</a>
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <tr>
+                    <td>@student.StudentName</td>
+                    <td>@student.StudentDob.ToString("dd/MM/yyyy")</td>
+                    <td>@((student.StudentGender)?("Female") :("Male"))</td>
+                    <td>@student.StudentEmail</td>
+                    <td>@student.Grade.GradeName</td>
+                    <td class="text-right">
+                        <a title="details student" asp-controller="Home" asp-action="Details" asp-route-id="@student.StudentId"><i class="fa fa-info"></i></a>
+                        <a title="edit student" asp-controller="Home" asp-action="Edit" asp-route-id="@student.StudentId"><i class='fa fa-edit'></i></a>
+                        <a title="remove student" class="text-danger" data-toggle="modal" data-target="#myModal"><i class='fa fa-trash'></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
