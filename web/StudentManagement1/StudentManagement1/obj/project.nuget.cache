@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hF+fnbFuUt9ju/VqrL63IXzbssr9IDfKhCcBu954O8joLTEeVj5PmqsLeZ5i+PzeUEDYoG17kF5kiioLCgum4g==",
+  "dgSpecHash": "N8J/fXFG5GNHdwak3Fpmce7bXjojoML7UOclDXDIMUwDuZKVe0Aku3iWOgWLuxq+p+ALQfdYyEb+3vAwMk6rig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\project\\project\\web\\StudentManagement1\\StudentManagement1\\StudentManagement1.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\project\\project\\web\\StudentManagement1\\StudentManagement1\\BookManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

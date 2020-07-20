@@ -4967,9 +4967,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\project\\project\\web\\StudentManagement1\\StudentManagement1\\StudentManagement1.csproj",
-      "projectName": "StudentManagement1",
-      "projectPath": "C:\\Users\\Admin\\Documents\\project\\project\\web\\StudentManagement1\\StudentManagement1\\StudentManagement1.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\project\\project\\web\\StudentManagement1\\StudentManagement1\\BookManagement.csproj",
+      "projectName": "BookManagement",
+      "projectPath": "C:\\Users\\Admin\\Documents\\project\\project\\web\\StudentManagement1\\StudentManagement1\\BookManagement.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Admin\\Documents\\project\\project\\web\\StudentManagement1\\StudentManagement1\\obj\\",
       "projectStyle": "PackageReference",
