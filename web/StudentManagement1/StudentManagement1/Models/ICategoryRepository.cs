@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace StudentManagement1.Models
 {
-    public interface IGradeRepository
+    public interface ICategoryRepository
     {
-        IEnumerable<Grade> GetAll();
-        Grade Get(int id);
+        IEnumerable<Category> GetAll();
+        Category Get(int id);
     }
 }

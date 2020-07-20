@@ -26,9 +26,9 @@ namespace StudentManagement1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(option => option.EnableEndpointRouting = false);
-            services.AddScoped<IStudentRepository, StudentRepository>();
-            services.AddScoped<IGradeRepository, GradeRepository>();
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("StudentDatabaseConnection")));
+            services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("BookDatabaseConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,9 +38,11 @@ namespace StudentManagement1
             {
                 app.UseDeveloperExceptionPage();
                 app.UseExceptionHandler("/Error");
+
             }
             else
             {
+
                 //app.UseExceptionHandler("/Home/Error");
                 //// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 //app.UseHsts();

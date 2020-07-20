@@ -1,7 +1,7 @@
 ﻿@model HomeEditViewModel
 @{
-    ViewBag.Title = "Edit Student";
-    var grade = ViewBag.Grade as List<Grade>;
+    ViewBag.Title = "Edit Book";
+    var category = ViewBag.Category as List<Category>;
    
 }
 <form enctype="multipart/form-data" asp-controller="Home" asp-action="Edit" method="post" class="my-4">
@@ -14,68 +14,72 @@
                 <input type="hidden" asp-for="Id" value="@Model.Id" />
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="StudentName"></label>
+                        <label asp-for="BookName"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input asp-for="StudentName" class="form-control" />
-                        <span asp-validation-for="StudentName"></span>
+                        <input asp-for="BookName" class="form-control" />
+                        <span class="text-danger" asp-validation-for="BookName"></span>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="StudentEmail"></label>
+                        <label asp-for="BookAuthor"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input asp-for="StudentEmail" class="form-control" />
-                        <span asp-validation-for="StudentEmail"></span>
+                        <input asp-for="BookAuthor" class="form-control" />
+                        <span class="text-danger" asp-validation-for="BookAuthor"></span>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="StudentGender"></label>
+                        <label asp-for="ShortDesCription"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input type="radio" value="@true" asp-for="StudentGender">
-                        <label class="mr-3">Female</label>
-                        <input type="radio" value="@false" asp-for="StudentGender">
-                        <label>Male</label>
-                        <div>
-                            <span asp-validation-for="StudentDob"></span>
-                        </div>
+                        <textarea asp-for="ShortDesCription" class="form-control"></textarea>
+                        <span class="text-danger" asp-validation-for="ShortDesCription"></span>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="StudentDob"></label>
+                        <label asp-for="Qlt"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input type="date" asp-for="StudentDob" class="form-control" />
-                        <span asp-validation-for="StudentDob"></span>
+                        <input type="number" asp-for="Qlt" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Qlt"></span>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="GradeId"></label>
+                        <label asp-for="Year"></label>
                     </div>
                     <div class="col-sm-9">
-                        <select asp-for="GradeId" class="custom-select">
+                        <input type="date" asp-for="Year" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Year"></span>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label asp-for="CategoryId"></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <select asp-for="CategoryId" class="custom-select">
                             <option value="">Select a department</option>
-                            @if (grade != null)
+                            @if (category != null)
                             {
-                                foreach (var item in grade)
+                                foreach (var item in category)
                                 {
-                                    <option value="@item.GradeId" selected="@(item.GradeId == Model.GradeId)">@item.GradeName</option>
+                                    <option value="@item.CategoryId" selected="@(item.CategoryId == Model.CategoryId)">@item.CategoryName</option>
                                 }
                             }
                         </select>
-                        <span asp-validation-for="GradeId"></span>
+                        <span class="text-danger" asp-validation-for="CategoryId"></span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card-footer bg-light">
             <button type="submit" class="btn btn-primary" onclick="save">Edit</button>
-            <a asp-controller="Home" asp-action="StudentByGrade" asp-route-id="@Model.GradeId" class="btn btn-warning mx-2">Back</a>
+            <a asp-controller="Home" asp-action="StudentByGrade" asp-route-id="@Model.CategoryId" class="btn btn-warning mx-2">Back</a>
         </div>
     </div>
 </form>

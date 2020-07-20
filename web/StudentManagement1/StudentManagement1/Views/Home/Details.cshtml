@@ -1,6 +1,6 @@
 ﻿@model HomeDetailViewModel;
 @{
-
+    ViewBag.Title = "Details";
 }
 
 @*<div class="container text-center col-6">
@@ -22,44 +22,53 @@
     </div>*@
 <div class="card my-2">
     <div class="card-header" style="background-color: #FED770 ">
-        <h4 style="color:#076A67">@Model.student.StudentName</h4>
+        <h4 style="color:#076A67">@Model.book.BookName</h4>
     </div>
     <div class="card card-body">
         <div class="row">
             <div class="col-8">
                 <div class="row">
                     <div class="col-3">
-                        <h4>Grade: </h4>
+                        <h4>Category: </h4>
                     </div>
                     <div class="col-9">
-                        <h5>@Model.student.Grade.GradeName</h5>
+                        <h5>@Model.book.Category.CategoryName</h5>
                     </div>
                 </div>
                 <hr />
                 <div class="row">
                     <div class="col-3">
-                        <h4>Gender: </h4>
+                        <h4>Year: </h4>
                     </div>
                     <div class="col-9">
-                        <h5>@((Model.student.StudentGender)?("Female") :("Male"))</h5>
+                        <h5>@Model.book.Year.ToString("dd/MM/yyyy")</h5>
                     </div>
                 </div>
                 <hr />
                 <div class="row">
                     <div class="col-3">
-                        <h4>Date of birth: </h4>
+                        <h4>Author: </h4>
                     </div>
                     <div class="col-9">
-                        <h5>@Model.student.StudentDob.ToString("dd/MM/yyyy")</h5>
+                        <h5>@Model.book.BookAuthor</h5>
                     </div>
                 </div>
                 <hr />
                 <div class="row">
                     <div class="col-3">
-                        <h4>Email: </h4>
+                        <h4>Short Description: </h4>
                     </div>
                     <div class="col-9">
-                        <h5>@Model.student.StudentEmail</h5>
+                        <h5>@Model.book.ShortDesCription</h5>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-3">
+                        <h4>Qlt: </h4>
+                    </div>
+                    <div class="col-9">
+                        <h5>@Model.book.Qlt</h5>
                     </div>
                 </div>
             </div>
@@ -67,7 +76,7 @@
     </div>
     <div class="card-footer">
         <div class="card-subtitle my-auto">
-            <a asp-controller="Home" asp-action="StudentByGrade" asp-route-id="@Model.student.GradeId" class="btn btn-warning mx-2">Back</a>
+            <a asp-controller="Home" asp-action="StudentByGrade" asp-route-id="@Model.book.CategoryId" class="btn btn-warning mx-2">Back</a>
         </div>
     </div>
 </div>

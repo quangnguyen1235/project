@@ -14,29 +14,29 @@ namespace StudentManagement.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IStudentRepository studentRepository;
-        private readonly IGradeRepository gradeRepository;
+        private readonly IBookRepository bookRepository;
+        private readonly ICategoryRepository categoryRepository;
         private readonly IWebHostEnvironment webHostEnvironment;
 
-        public HomeController(IStudentRepository studentRepository, IGradeRepository gradeRepository, IWebHostEnvironment webHostEnvironment)
+        public HomeController(IBookRepository bookRepository, ICategoryRepository categoryRepository, IWebHostEnvironment webHostEnvironment)
         {
-            this.studentRepository = studentRepository;
-            this.gradeRepository = gradeRepository;
+            this.bookRepository = bookRepository;
+            this.categoryRepository = categoryRepository;
             this.webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
         {
-            IEnumerable<Grade> grades = gradeRepository.GetAll();
-            return View(grades);
+            IEnumerable<Category> categories = categoryRepository.GetAll();
+            return View(categories);
         }
         public IActionResult StudentByGrade(int id)
         {
             try
             {
-                ViewBag.Grade = gradeRepository.Get(id);
-                IEnumerable<Student> students = studentRepository.GetByGrade(id);
-                return View(students);
+                ViewBag.categories = categoryRepository.Get(id);
+                IEnumerable<Book> books = bookRepository.GetByGrade(id);
+                return View(books);
             }
             catch (Exception e)
             {
@@ -48,7 +48,7 @@ namespace StudentManagement.Controllers
         {
             try
             {
-                ViewBag.Grade = gradeRepository.Get(id);
+                ViewBag.Category = categoryRepository.Get(id);
                 return View();
             }
             catch (Exception e)
@@ -57,22 +57,29 @@ namespace StudentManagement.Controllers
             }
         }
         [HttpPost]
-        public IActionResult Create(Student model, int id)
+        public IActionResult Create(Book model, int id)
         {
 
             if (ModelState.IsValid)
             {
-                var student = new Student
+                var book = new Book
                 {
-                    StudentName = model.StudentName,
-                    GradeId = id,
-                    StudentDob = model.StudentDob,
-                    StudentGender = model.StudentGender,
-                    StudentEmail = model.StudentEmail,
+                    BookId = model.BookId,
+                    CategoryId = id,
+                    ShortDesCription = model.ShortDesCription,
+                    BookAuthor = model.BookAuthor,
+                    BookName = model.BookName,
+                    Qlt = model.Qlt,
+                    Year = model.Year
+                    //StudentName = model.StudentName,
+                    //GradeId = id,
+                    //StudentDob = model.StudentDob,
+                    //StudentGender = model.StudentGender,
+                    //StudentEmail = model.StudentEmail,
                 };
 
-                var newStudent = studentRepository.Create(student, id);
-                return RedirectToAction("StudentByGrade", new { id = newStudent.GradeId });
+                var newBook = bookRepository.Create(book, id);
+                return RedirectToAction("StudentByGrade", new { id = newBook.CategoryId });
             }
             return View();
         }
@@ -80,19 +87,25 @@ namespace StudentManagement.Controllers
         public IActionResult Edit(int id)
         {
            
-                ViewBag.Grade = GetGrades();
-                var student = studentRepository.GetById(id);
-                var editProduct = new HomeEditViewModel
+                ViewBag.Category = GetGrades();
+                var book = bookRepository.GetById(id);
+                var editBook = new HomeEditViewModel
                 {
-                    Id = student.StudentId,
-                    StudentId = student.StudentId,
-                    StudentDob = student.StudentDob,
-                    StudentEmail = student.StudentEmail,
-                    StudentGender = student.StudentGender,
-                    StudentName = student.StudentName,
-                    GradeId = student.GradeId
+                    Id = book.BookId,
+                    CategoryId = book.CategoryId,
+                    ShortDesCription = book.ShortDesCription,
+                    BookAuthor = book.BookAuthor,
+                    BookName = book.BookName,
+                    Qlt = book.Qlt,
+                    Year = book.Year
+                    //StudentId = student.StudentId,
+                    //StudentDob = student.StudentDob,
+                    //StudentEmail = student.StudentEmail,
+                    //StudentGender = student.StudentGender,
+                    //StudentName = student.StudentName,
+                    //GradeId = student.GradeId
                 };
-                return View(editProduct);
+                return View(editBook);
            
         }
         [HttpPost]
@@ -100,20 +113,27 @@ namespace StudentManagement.Controllers
         {
                 if (ModelState.IsValid)
                 {
-                    var student = new Student
+                    var book = new Book
                     {
-                        StudentId = model.Id,
-                        StudentDob = model.StudentDob,
-                        StudentEmail = model.StudentEmail,
-                        StudentGender = model.StudentGender,
-                        StudentName = model.StudentName,
-                        GradeId = model.GradeId
+                        BookId = model.Id,
+                        CategoryId = model.CategoryId,
+                        ShortDesCription = model.ShortDesCription,
+                        BookAuthor = model.BookAuthor,
+                        BookName = model.BookName,
+                        Qlt = model.Qlt,
+                        Year = model.Year
+                        //StudentId = model.Id,
+                        //StudentDob = model.StudentDob,
+                        //StudentEmail = model.StudentEmail,
+                        //StudentGender = model.StudentGender,
+                        //StudentName = model.StudentName,
+                        //GradeId = model.GradeId
                     };
                    
-                    var editStudent = studentRepository.Edit(student);
-                    if (student != null)
+                    var editBook = bookRepository.Edit(book);
+                    if (book != null)
                     {
-                        return RedirectToAction("StudentByGrade", new { id = editStudent.GradeId });
+                        return RedirectToAction("StudentByGrade", new { id = editBook.CategoryId });
                         //return RedirectToAction("Details", new { id = editProduct.ProductId });
                     }
                 }
@@ -123,10 +143,10 @@ namespace StudentManagement.Controllers
         {
             try
             {
-                var delStudent = studentRepository.GetById(id);
-                if (studentRepository.Delete(id))
+                var delBook = bookRepository.GetById(id);
+                if (bookRepository.Delete(id))
                 {
-                    return RedirectToAction("StudentByGrade", new { id = delStudent.GradeId });
+                    return RedirectToAction("StudentByGrade", new { id = delBook.CategoryId });
                 }
                 return View();
             }
@@ -139,10 +159,10 @@ namespace StudentManagement.Controllers
         {
             try
             {
-                var student = studentRepository.GetById(id);
+                var book = bookRepository.GetById(id);
                 var detailViewModel = new HomeDetailViewModel()
                 {
-                    student = studentRepository.GetById(id)
+                    book = bookRepository.GetById(id)
                 };
                 return View(detailViewModel);
             }
@@ -151,9 +171,9 @@ namespace StudentManagement.Controllers
                 throw e;
             }
         }
-        private List<Grade> GetGrades()
+        private List<Category> GetGrades()
         {
-            return gradeRepository.GetAll().ToList();
+            return categoryRepository.GetAll().ToList();
         }
     }
 }

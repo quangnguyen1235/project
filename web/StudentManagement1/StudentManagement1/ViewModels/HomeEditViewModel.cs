@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement1.ViewModel
 {
-    public class HomeEditViewModel : Student
+    public class HomeEditViewModel : Book
     {
         public int Id { get; set; }
     }

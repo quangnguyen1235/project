@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace StudentManagement1.Models
 {
-    public class Grade
+    public class Category
     {
-        public int GradeId { get; set; }
+        public int CategoryId { get; set; }
         [Required]
-        public string GradeName { get; set; }
-        public ICollection<Student> Students { get; set; }
+        public string CategoryName { get; set; }
+        public ICollection<Book> Books { get; set; }
     }
 }

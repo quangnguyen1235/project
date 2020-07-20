@@ -5,24 +5,24 @@ using System.Threading.Tasks;
 
 namespace StudentManagement1.Models
 {
-    public class GradeRepository : IGradeRepository
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly AppDbContext context;
 
-        public GradeRepository(AppDbContext context)
+        public CategoryRepository(AppDbContext context)
         {
             this.context = context;
         }
 
-        public Grade Get(int id)
+        public Category Get(int id)
         {
-            var data = context.Grades.Find(id);
+            var data = context.Categories.Find(id);
             return data;
         }
 
-        public IEnumerable<Grade> GetAll()
+        public IEnumerable<Category> GetAll()
         {
-            return context.Grades;
+            return context.Categories;
         }
     }
 }

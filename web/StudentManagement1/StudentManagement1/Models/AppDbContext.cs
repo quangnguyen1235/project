@@ -14,15 +14,15 @@ namespace StudentManagement1.Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Grade>().HasData(
-                new Grade() { GradeId = 1, GradeName = "C#" },
-                new Grade() { GradeId = 2, GradeName = "Java"},
-                new Grade() { GradeId = 3, GradeName = "C++" },
-                new Grade() { GradeId = 4, GradeName = "Php" },
-                new Grade() { GradeId = 5, GradeName = "Sql" }
+            modelBuilder.Entity<Category>().HasData(
+                new Category() { CategoryId = 1, CategoryName = "C#" },
+                new Category() { CategoryId = 2, CategoryName = "Java" },
+                new Category() { CategoryId = 3, CategoryName = "C++" },
+                new Category() { CategoryId = 4, CategoryName = "Php" },
+                new Category() { CategoryId = 5, CategoryName = "Sql" }
             );
         }
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Grade> Grades { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

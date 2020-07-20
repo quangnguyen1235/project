@@ -14,5 +14,7 @@ namespace StudentManagement1.Controllers
         {
             return View("Exception");
         }
+        // nghe anh nói k k nghe chi hết nghe e nói k, nghe rè rè e có nói mô mà  nghe
     }
 }
+// chừ đụng đi hifiiiiii fiiiiiiii mô rồi

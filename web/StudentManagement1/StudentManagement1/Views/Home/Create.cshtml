@@ -1,9 +1,9 @@
 ﻿@{
-    ViewBag.Title = "Create Product";
-    var grade = ViewBag.Grade as Grade;
+    ViewBag.Title = "Create Book";
+    var category = ViewBag.Category as Category;
 }
-@model Student;
-<form enctype="multipart/form-data" asp-controller="Home" asp-action="Create" asp-route-id="@grade.GradeId" method="post" class="my-4">
+@model Book;
+<form enctype="multipart/form-data" asp-controller="Home" asp-action="Create" asp-route-id="@category.CategoryId" method="post" class="my-4">
     <div class="card">
         <div class="card-header" style="background-color: #FED770">
             <h1 style="color:#076A67">@ViewBag.Title</h1>
@@ -12,50 +12,54 @@
             <div class="form">
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="StudentName"></label>
+                        <label asp-for="BookName"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input asp-for="StudentName" class="form-control" />
-                        <span asp-validation-for="StudentName"></span>
+                        <input asp-for="BookName" class="form-control" />
+                        <span class="text-danger" asp-validation-for="BookName"></span>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="StudentEmail"></label>
+                        <label asp-for="BookAuthor"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input asp-for="StudentEmail" class="form-control" />
-                        <span asp-validation-for="StudentEmail"></span>
+                        <input asp-for="BookAuthor" class="form-control" />
+                        <span class="text-danger" asp-validation-for="BookAuthor"></span>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="StudentGender"></label>
+                        <label asp-for="ShortDesCription"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input type="radio" value="@true" asp-for="StudentGender">
-                        <label class="mr-3">Female</label>
-                        <input type="radio" value="@false" asp-for="StudentGender">
-                        <label>Male</label>
-                        <div>
-                            <span asp-validation-for="StudentDob"></span>
-                        </div>
+                        <textarea asp-for="ShortDesCription" class="form-control"></textarea>
+                        <span class="text-danger" asp-validation-for="ShortDesCription"></span>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-sm-3">
-                        <label asp-for="StudentDob"></label>
+                        <label asp-for="Qlt"></label>
                     </div>
                     <div class="col-sm-9">
-                        <input type="date" asp-for="StudentDob" class="form-control" />
-                        <span asp-validation-for="StudentDob"></span>
+                        <input type="number" asp-for="Qlt" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Qlt"></span>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                        <label asp-for="Year"></label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="date" asp-for="Year" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Year"></span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card-footer bg-light">
             <button type="submit" class="btn btn-primary" onclick="save">Create</button>
-            <a asp-controller="Home" asp-action="StudentByGrade" asp-route-id="@grade.GradeId" class="btn btn-warning mx-2">Back</a>
+            <a asp-controller="Home" asp-action="StudentByGrade" asp-route-id="@category.CategoryId" class="btn btn-warning mx-2">Back</a>
         </div>
     </div>
 </form>

@@ -8,6 +8,6 @@ namespace StudentManagement1.ViewModel
 {
     public class HomeDetailViewModel
     {
-        public Student student { get; set; }
+        public Book book { get; set; }
     }
 }
