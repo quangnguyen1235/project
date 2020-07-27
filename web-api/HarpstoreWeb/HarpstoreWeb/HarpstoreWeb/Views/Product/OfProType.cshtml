@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "List Products";
+    var proType = ViewBag.ProType as HarpstoreWeb.Models.ProType.ProType;
+}
+@model IEnumerable<HarpstoreWeb.Models.Product.ProductView>;
+    <div class="">
+        <h1 class="display-4">@ViewBag.Title of @proType.ProTypeName</h1>
+        <input hidden id="ProtypeId" value="@proType.ProTypeId" />
+        <div class="row">
+            <div class="col-12 mb-3">
+                <a href="javascript:void(0);" class="btn btn-info"
+                   onclick="home.openAddEditdepartment()">Create</a>
+            </div>
+        </div>
+        <table id="tbProduct" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>AvataPath</th>
+                    <th>Producer</th>
+                    <th>ProductPrice</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <a href="/Product/Details/@item.ProductId" title="Product Details">@item.ProductName</a>
+                        </td>
+                        <td>@item.AvataPath</td>
+                        <td>@item.ProducerName</td>
+                        <td>@item.ProductPrice</td>
+                        <td>
+                            <a href="javascripts:;" class="btn btn-success"
+                               onclick="home.get()">Edit</a>
+                            <a href="javascripts:;" class="btn btn-danger"
+                               onclick="home.delete()">Remove</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- Modal -->
+        <div id="addEditdepartment" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <form id="frmAddEditdepartment">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Add New Department</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <input hidden id="DepartmentId" name="DepartmentId">
+                        <div class="modal-body">
+                            <div class="row form-group">
+                                <div class="col-3">
+                                    <label>Department Name</label>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="DepartmentName" name="Department Name" class="form-control" data-rule-required="true">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                            <a href="javascript:;" class="btn btn-danger" onclick="home.save()">Save</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+@*@section Scripts{
+    <script src="~/js/product.js" asp-append-version="true"></script>
+}*@

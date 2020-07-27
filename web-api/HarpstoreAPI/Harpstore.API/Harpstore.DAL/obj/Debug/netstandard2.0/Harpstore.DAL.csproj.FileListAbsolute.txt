@@ -1,0 +1,14 @@
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\bin\Debug\netstandard2.0\Harpstore.DAL.Interface.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\bin\Debug\netstandard2.0\Harpstore.Domain.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\obj\Debug\netstandard2.0\Harpstore.DAL.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\obj\Debug\netstandard2.0\Harpstore.DAL.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\obj\Debug\netstandard2.0\Harpstore.DAL.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\bin\Debug\netstandard2.0\Harpstore.DAL.deps.json
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\bin\Debug\netstandard2.0\Harpstore.DAL.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\bin\Debug\netstandard2.0\Harpstore.DAL.pdb
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\bin\Debug\netstandard2.0\Harpstore.DAL.Interface.pdb
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\bin\Debug\netstandard2.0\Harpstore.Domain.pdb
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\obj\Debug\netstandard2.0\Harpstore.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\obj\Debug\netstandard2.0\Harpstore.DAL.csproj.CopyComplete
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\obj\Debug\netstandard2.0\Harpstore.DAL.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Harpstore.DAL\obj\Debug\netstandard2.0\Harpstore.DAL.pdb

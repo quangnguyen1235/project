@@ -1,0 +1,16 @@
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.BAL.deps.json
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.BAL.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.BAL.pdb
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.BAL.Interface.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.DAL.Interface.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.Domain.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.BAL.Interface.pdb
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.DAL.Interface.pdb
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\bin\Debug\netstandard2.0\Harpstore.Domain.pdb
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\obj\Debug\netstandard2.0\Harpstore.BAL.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\obj\Debug\netstandard2.0\Harpstore.BAL.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\obj\Debug\netstandard2.0\Harpstore.BAL.AssemblyInfo.cs
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\obj\Debug\netstandard2.0\Harpstore.BAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\obj\Debug\netstandard2.0\Harpstore.BAL.csproj.CopyComplete
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\obj\Debug\netstandard2.0\Harpstore.BAL.dll
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreAPI\Harpstore.API\Haspstore.BAL\obj\Debug\netstandard2.0\Harpstore.BAL.pdb

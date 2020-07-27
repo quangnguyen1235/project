@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "T36LOQHT4yfkKzrZaeciyYfGzNb1+rbgeoTy9AvQMFfJPuPJE+1Z3mxlvnUtnLWNRlYi3Js564CN/H3+pCrvYw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\project\\project\\web-api\\HarpstoreAPI\\Harpstore.API\\Harpstore.Domain\\Harpstore.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
