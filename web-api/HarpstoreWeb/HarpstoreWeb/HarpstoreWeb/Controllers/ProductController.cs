@@ -25,16 +25,26 @@ namespace HarpstoreWeb.Controllers
         public ViewResult OfProducer(int id)
         {
             var producer = new Producer();
+            var listProType = new List<ProType>();
+            var listProducer = new List<Producer>();
+            listProducer = ApiHelper<List<Producer>>.HttpGetAsync(apiUrl: $"{Helper.ApiUrl}api/producer/getAll");
+            listProType = ApiHelper<List<ProType>>.HttpGetAsync(apiUrl: $"{Helper.ApiUrl}api/protype/getAll");
             producer = ApiHelper<Producer>.HttpGetAsync(apiUrl: $"{Helper.ApiUrl}api/producer/getById/{id}");
+            ViewBag.ListProType = listProType;
+            ViewBag.ListProducer = listProducer;
             ViewBag.Producer = producer;
             return View();
         }
         public JsonResult GetbyProducer(int id)
         {
             var listProType = new List<ProType>();
+            //var listProducer = new List<Producer>();
             var listProduct = new List<Product>();
             listProduct = ApiHelper<List<Product>>.HttpGetAsync(apiUrl: $"{Helper.ApiUrl}api/product/producer/{id}");
+            //listProducer = ApiHelper<List<Producer>>.HttpGetAsync(apiUrl: $"{Helper.ApiUrl}api/producer/getAll");
             listProType = ApiHelper<List<ProType>>.HttpGetAsync(apiUrl: $"{Helper.ApiUrl}api/protype/getAll");
+            //ViewBag.ProType = listProType;
+            //ViewBag.Producer = listProducer;
             var dataProductView = (from product in listProduct
                         join protype in listProType
                         on product.ProTypeId equals protype.ProTypeId
@@ -109,6 +119,33 @@ namespace HarpstoreWeb.Controllers
                 ProducerName = producer.ProducerName
             };
             return View(productDetails);
+        }
+        public JsonResult Save([FromBody] Product model)
+        {
+            //var product = ApiHelper<Product>.HttpGetAsync(apiUrl: $"{Helper.ApiUrl}api/product/getById/{model.ProductId}");
+            var result = new SaveProductResult();
+            result = ApiHelper<SaveProductResult>.HttpPostAsync(
+                                                    $"{Helper.ApiUrl}api/product/save",
+                                                    model
+                                                );
+            return Json(new { result });
+        }
+        public JsonResult Get(int id)
+        {
+            var result = new Product();
+            result = ApiHelper<Product>.HttpGetAsync(
+                                                    $"{Helper.ApiUrl}api/product/getById/{id}"
+                                                );
+            return Json(new { result });
+        }
+        public JsonResult Delete(int id)
+        {
+            var result = new SaveProductResult();
+            result = ApiHelper<SaveProductResult>.HttpGetAsync(
+                                                    $"{Helper.ApiUrl}api/product/delete/{id}",
+                                                    "DELETE"
+                                                );
+            return Json(new { result });
         }
     }
 }

@@ -112,3 +112,4 @@ C:\Users\Admin\Documents\project\project\web-api\HarpstoreWeb\HarpstoreWeb\Harps
 C:\Users\Admin\Documents\project\project\web-api\HarpstoreWeb\HarpstoreWeb\HarpstoreWeb\obj\Debug\netcoreapp3.1\Razor\Views\ProType\Index.cshtml.g.cs
 C:\Users\Admin\Documents\project\project\web-api\HarpstoreWeb\HarpstoreWeb\HarpstoreWeb\obj\Debug\netcoreapp3.1\Razor\Views\Product\OfProducer.cshtml.g.cs
 C:\Users\Admin\Documents\project\project\web-api\HarpstoreWeb\HarpstoreWeb\HarpstoreWeb\obj\Debug\netcoreapp3.1\Razor\Views\Product\OfProType.cshtml.g.cs
+C:\Users\Admin\Documents\project\project\web-api\HarpstoreWeb\HarpstoreWeb\HarpstoreWeb\bin\Debug\netcoreapp3.1\libman.json

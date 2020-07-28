@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace Harpstore.API.Controllers
 {
+    [ApiController]
     public class ProductController: ControllerBase
     {
         private readonly IProductService productService;
