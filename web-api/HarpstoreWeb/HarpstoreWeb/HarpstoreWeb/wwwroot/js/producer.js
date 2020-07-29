@@ -8,7 +8,7 @@ producer.drawTable = function () {
             $('#tbProducer tbody').empty();
             $.each(data.listProducer, function (i, v) {
                 var products = v.products > 0 ?
-                    `<a href="/Product/OfProducer/${v.producerId}" title="Product list">${v.products}</a>` :
+                    `<a href="/Product/Index/${v.producerId}" title="Product list">${v.products}</a>` :
                     `${v.products}`;
                 $('#tbProducer tbody').append(
                     `<tr>

@@ -10,6 +10,8 @@
     <div class="row">
         <div class="col-12 mb-3">
             <a class="btn btn-info"
+               @*Bấm vào đây thì nó sẽ gọi hàm product.openSaveProductModel() ở trong file javascript product, mấy file javascript ở trong chỗ
+                   wwwroot/js *@
                onclick="product.openSaveProductModel()">Create</a>
         </div>
     </div>
@@ -133,6 +135,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                    @*Ở đây khi bấm lưu là nó gọi hàm product.save() ở trong file javascript product, làm với category thì gọi cho đúng tên hàm ở file js: category *@
                     <a class="btn btn-danger" onclick="product.save()">Save</a>
                 </div>
             </div>

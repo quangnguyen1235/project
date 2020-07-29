@@ -22,7 +22,7 @@ namespace HarpstoreWeb.Controllers
         {
             _logger = logger;
         }
-        public ViewResult OfProducer(int id)
+        public ViewResult Index(int id)
         {
             var producer = new Producer();
             var listProType = new List<ProType>();

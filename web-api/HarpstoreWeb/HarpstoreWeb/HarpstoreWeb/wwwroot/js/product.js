@@ -28,12 +28,18 @@ product.drawTable = function () {
         }
     })
 };
+// Muốn thay đổi thì phải đổ dữ liệu về, khi bấm Edit thì nó sẽ trả về dữ liệu cũ của sản phẩm theo các thẻ <input> có id ở trong modal
+// ví dụ <input id ="ProductName"><input>
 product.get = function (id) {
     $.ajax({
+        // đây là format "Tên controller"/"Tên action"/"tham số"
+        // ví dụ /Product/Get/${id}` thì controller là ProductController, action là Get(), tham số là id
         url: `/Product/Get/${id}`,
         method: "GET",
         dataType: "json",
         success: function (data) {
+            // qua bên trang Index của Views/Product coi các trường có id như dưới
+            // ví dụ #ProductName thì id là ProductName
             $('#ProductName').val(data.result.productName);
             $('#ProductId').val(data.result.productId);
             $('#AvataPath').attr('src', data.result.avataPath);
@@ -46,6 +52,9 @@ product.get = function (id) {
         }
     });
 }
+// đổ dữ liệu về xong, thì chỉ cần bấm nút save trên modal thì nó sẽ tự gọi hàm save rồi lưu xuống database
+// làm tương tự như ri với bên category
+// nhớ khi làm cẩn thận, check từng cái id bên category hấy
 product.save = function () {
     var saveObj = {};
     saveObj.ProductName = $('#ProductName').val();
